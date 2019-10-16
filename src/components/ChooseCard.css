@@ -9,6 +9,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     background-color: #ffcb05;
     padding: 10px;
     width: 25%;
+    margin:auto;
 }
 .choose-card--content{
     background-color: #2a75bb;
