@@ -43,8 +43,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     max-width: 70%;
     transform: scale(1.5);
     height: auto;
-    margin:auto;
-    max-height: 250px;
     margin: auto;
     margin-bottom: 15px;
 }
