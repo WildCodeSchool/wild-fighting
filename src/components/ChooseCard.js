@@ -17,7 +17,7 @@ class ChooseCard extends Component {
     
     render(){
         return(
-            <section className="choose-card">
+            <section className="choose-card element-animation">
                 <div className="choose-card--content">
                     <div className="choose-card--info">
                         <span className="choose-card--info-name">{this.state.name}</span>
