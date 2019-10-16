@@ -37,7 +37,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     font-weight: 600;
     font-family: 'Roboto';
 }
-.choose-card--avatar{
+
+.choose-card--avatar {
     width: 70%;
     max-width: 70%;
     transform: scale(1.5);
@@ -51,21 +52,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     margin:auto;
     margin-bottom: 15px;
 }
-.choose-card--desc{
+
+.choose-card--desc {
     text-align: left;
     font-size: 1.1em;
     font-weight: 400;
     font-family: 'Roboto';
     padding: 25px;
 }
-.choose-card--atks{
-    display:flex;
+
+.choose-card--atks {
+    display: flex;
     align-items: center;
     flex-direction: column;
 }
-.choose-card--atks-panel{
+
+.choose-card--atks-panel {
     padding: 15px;
-    border:solid 2px #ffcb05;
+    border: solid 2px #ffcb05;
     background-color: #3c5aa6;
     width: 80%;
     font-size: 1.1em;
