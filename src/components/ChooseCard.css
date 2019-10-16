@@ -44,16 +44,17 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     transform: scale(1.5);
     overflow: hidden;
     height: auto;
-<<<<<<< HEAD
     margin:auto;
     max-height: 250px;
-=======
     margin: auto;
     margin-bottom: 15px;
->>>>>>> Finish component and add animation on cards
 }
 
 .choose-card--desc {
+    margin:auto;
+    max-height: 250px;
+}
+.choose-card--desc{
     text-align: left;
     font-size: 1.1em;
     font-weight: 400;
@@ -94,7 +95,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     animation-iteration-count: infinite;
     transform-origin: 50% 50%;
     animation-fill-mode: forwards;
-    /*when the spec is finished*/
 }
 
 @keyframes animationVS {
