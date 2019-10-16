@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import './App.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
