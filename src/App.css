@@ -30,7 +30,7 @@
 .App--VS{
   height: 150px;
   width: 150px;
-  background-color: rgba(60, 90, 166,0.5);
+  background-color: rgba(0,0,0,0.5);
   margin:auto;
   border-radius:50%;
   display:flex;
