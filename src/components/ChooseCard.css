@@ -42,7 +42,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     width: 70%;
     max-width: 70%;
     transform: scale(1.5);
-    overflow: hidden;
     height: auto;
     margin:auto;
     max-height: 250px;
