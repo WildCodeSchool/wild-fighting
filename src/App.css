@@ -3,7 +3,11 @@
   flex-wrap: wrap;
   background-color: blue;
   display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100vh;
 }
+
 .App-logo {
   height: 40vmin;
 }
