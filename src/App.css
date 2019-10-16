@@ -1,0 +1,17 @@
+.App--VS{
+  height: 150px;
+  width: 150px;
+  background-color: rgba(60, 90, 166,0.5);
+  margin:auto;
+  border-radius:50%;
+  display:flex;
+}
+.App--VS-button{
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Roboto';
+  color:#ffcb05;
+  background-color: transparent;
+  border:none;
+  margin:auto;
+}
