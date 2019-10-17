@@ -40,10 +40,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .combat-card--avatar {
     width: 70%;
     max-width: 70%;
-    transform: scale(1.5);
     height: auto;
     margin: auto;
     margin-bottom: 15px;
+    animation: animationPokemon linear 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:forwards;
+    transform: scale(2);
 }
 
 .combat-card--desc {
@@ -81,3 +84,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .combat-card--atks-panel-name img{
     margin-right: 10px;
 }
+
+  
+@keyframes animationPokemon{
+    0% {
+      transform:  translate(0px,0px) scale(1.5) ;
+    }
+    30% {
+      transform:  translate(5px,-5px) scale(1.5) ;
+    }
+    60% {
+      transform:  translate(5px,0px) scale(1.5) ;
+    }
+    80% {
+      transform:  translate(0px,5px) scale(1.5) ;
+    }
+    100% {
+      transform:  translate(0px,0px) scale(1.5) ;
+    }
+  }
+  
+  

@@ -24,7 +24,7 @@ class CombatCard extends Component {
                             <img className="combat-card--info-type" alt="Type" src={this.state.type}/>
                         </div>
                     </div>  
-                    <img className="combat-card--avatar" alt="Pokémon" src={this.state.image}/>
+                    <img className="pokemon-animation combat-card--avatar" alt="Pokémon" src={this.state.image}/>
                     <div className="combat-card--atks">
                         <button className="combat-card--atks-panel">
                             <span className="combat-card--atks-panel-name">
