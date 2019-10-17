@@ -27,15 +27,20 @@ class ChooseCard extends Component {
                     <img className="choose-card--avatar" alt="Pokémon" src={this.state.image}/>
                     <div className="choose-card--atks">
                         <div className="choose-card--atks-panel">
-                            <span className="choose-card--atks-panel-name">Morsure</span>
+                            <span className="choose-card--atks-panel-name">
+                                <img className="choose-card--info-type" alt="Type" src={this.state.type}/>
+                                Morsure
+                            </span>
                             <span className="choose-card--atks--panel-damg">20</span>
                         </div>
                         <div className="choose-card--atks-panel">
-                            <span className="choose-card--atks-panel-name">Morsure</span>
+                            <span className="choose-card--atks-panel-name">
+                                <img className="choose-card--info-type" alt="Type" src={this.state.type}/>
+                                Morsure
+                            </span>
                             <span className="choose-card--atks--panel-damg">20</span>
                         </div>
                     </div>
-                    <p className="choose-card--desc">{this.state.description}</p>
                 </div>
             </section>
             )
