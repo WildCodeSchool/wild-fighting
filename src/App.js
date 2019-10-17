@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import './App.css';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import LoserPage from './components/Loser/LoserPage.js';
 
 
 class App extends Component {
