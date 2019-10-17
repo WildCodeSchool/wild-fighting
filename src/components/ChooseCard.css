@@ -79,6 +79,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.choose-card--atks-panel-name{
+    display:flex;
+    align-items: center;
+}
+.choose-card--atks-panel-name img{
+    margin-right: 10px;
 }
 
 .element-animation {
