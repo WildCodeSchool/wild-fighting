@@ -14,7 +14,6 @@ class ChooseCard extends Component {
         }
     }
     
-    
     render(){
         return(
             <section className="choose-card element-animation">
