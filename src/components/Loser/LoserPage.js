@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React from 'react';
 import cross from './croixtest.png'; 
 import './LoserPage.css';
 import Row from './return.png'
@@ -7,6 +7,7 @@ import Row from './return.png'
 function LoserPage(){
         return(
             <div className="container">
+                <div className="loserpoke">
             <div className="element-animation2">
                 <img className="cross" src={cross} alt="lose"/>
             </div>
@@ -17,6 +18,7 @@ function LoserPage(){
             <img className="row" src={Row} alt="lose"/>
                 
             </div>
+        </div>
         </div>
         )
     }

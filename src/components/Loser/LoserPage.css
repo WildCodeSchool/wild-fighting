@@ -16,8 +16,10 @@
     -ms-animation: animationFrames linear 0.8s;
     -ms-animation-iteration-count: 1;
     -ms-transform-origin: 50% 50%;
+    color:white;
   }
   
+
   @keyframes animationFrames{
     0% {
       transform:  translate(0px,0px)  ;
@@ -258,20 +260,22 @@
  }
 .container {
     width:auto;
-    height:100vh;
+    /*height:100vh;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-image:url('fond.png');
-    background-repeat: none;
-    background-size: 100% 100%;
+    background-color: RGBA(255,0,0,.8);
     font-size:50px;
-
-    
+    margin-bottom: 0;
+    overflow : hidden;
 }
 
+.loserpoke{
+background: url(pokefinal.png) no-repeat left bottom ;
+height: 100vh;
 
+}
 
 button {
     width: 50%;
