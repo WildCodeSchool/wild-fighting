@@ -1,0 +1,32 @@
+body {
+    background-color: #c0dd41;
+
+ }
+.winnerResult{
+    display: flex;
+    justify-content: space-around;
+}
+.trophy{
+    width: 365px;
+    margin: 25px 0 0 0;
+}
+.v_1 {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+}
+.winResultTitle{
+    margin: 0 0 2px 0;
+    font-size: 50px;
+}
+.winnerPokemon{   
+    width: 80%;
+    margin: 0 0 0 0;
+}
+.option{
+    display: flex;
+    width: 100%;
+    margin: 20px 0 0 0;
+    justify-content: space-around;
+}
