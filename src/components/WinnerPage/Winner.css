@@ -1,0 +1,325 @@
+/* Debut regle animation trophy*/
+@-webkit-keyframes roll-in-blurred-left {
+    0% {
+      -webkit-transform: translateX(-1000px) rotate(-720deg);
+              transform: translateX(-1000px) rotate(-720deg);
+      -webkit-filter: blur(50px);
+              filter: blur(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+   }
+   @keyframes roll-in-blurred-left {
+    0% {
+      -webkit-transform: translateX(-1000px) rotate(-720deg);
+              transform: translateX(-1000px) rotate(-720deg);
+      -webkit-filter: blur(50px);
+              filter: blur(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+   }   
+/* Fin regle animation trophy*/
+/* Debut animation titre victory*/
+@-webkit-keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+   }
+   @keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+   }
+/* Fin animation titre victory*/
+/* Debut anim winner pokemon*/
+@-webkit-keyframes rotate-in-center {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      opacity: 1;
+    }
+   }
+   @keyframes rotate-in-center {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      opacity: 1;
+    }
+   }
+/* Fin anim winner pokemon*/
+/* Debut anim return Arrow*/
+@-webkit-keyframes bounce-in-bottom {
+    0% {
+      -webkit-transform: translateY(500px);
+              transform: translateY(500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(65px);
+              transform: translateY(65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(28px);
+              transform: translateY(28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+   }
+   @keyframes bounce-in-bottom {
+    0% {
+      -webkit-transform: translateY(500px);
+              transform: translateY(500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(65px);
+              transform: translateY(65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(28px);
+              transform: translateY(28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+   }   
+/* Fin anim return Arrow*/
+body {
+    background-color: rgba(0, 255, 0, .8);
+
+ }
+.winnerResult{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 9%;
+    
+}
+.trophy{
+    width: 61%; 
+    margin: 25px 0 0 0;
+}
+.roll-in-blurred-left {
+    -webkit-animation: roll-in-blurred-left 1.00s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            animation: roll-in-blurred-left 1.00s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+.v_1 {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 30px;
+    justify-content: space-around;
+}
+.winResultTitle{
+    margin: 0 0 2px 0;
+    font-size: 50px;
+}
+.slide-in-blurred-top {
+    -webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
+            animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
+}
+.winnerPokemon{   
+    width: 80%;
+    margin: 0 0 0 0;
+}
+.rotate-in-center {
+    -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.option{
+    display: flex;
+    width: 100%;
+    margin: 20px 0 0 0;
+    justify-content: space-around;
+}
+/*Début du code pour le bouton
+button {
+	cursor: pointer;
+	position: relative;
+	padding: 2.5rem 5.5rem;
+	border-radius: 3.75rem;
+	line-height: 2.5rem;
+	font-size: 2rem;
+	font-weight: 600;
+	border: 1px solid #012880;
+	background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
+	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50), 0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset, 0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
+	margin-top: 25px;
+	margin-left: 35%;
+	width: 30%;
+	margin-bottom: 25px;
+}
+
+button span {
+	color: transparent;
+	background-image: linear-gradient(0deg, #EE82DA 0%, #FEFAFD 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+}
+
+button::before {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	
+	opacity: 0.7;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+button::after {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	position: absolute;
+	bottom: 0.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	filter: blur(1px);
+	opacity: 0.05;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+.button:hover { background-color: #3e8e41 }
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+fin du code du menu*/
+.bounce-in-bottom {
+    -webkit-animation: bounce-in-bottom 1.1s 2s both;
+            animation: bounce-in-bottom 1.1s 2s both;
+   }
