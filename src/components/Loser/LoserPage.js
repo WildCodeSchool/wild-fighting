@@ -1,23 +1,24 @@
-import React from 'react';
+import React,{Component} from 'react';
 import cross from './croixtest.png'; 
 import './LoserPage.css';
-import returne from './return.png';
+import Row from './return.png'
 
 
-function LoserPage () {
-    return (
-        <div className="container">
+function LoserPage(){
+        return(
+            <div className="container">
             <div className="element-animation2">
                 <img className="cross" src={cross} alt="lose"/>
             </div>
             <div className="element-animation">
             <h2>You lose</h2>
             </div>
-            <div className="return">
-                <img className="retour" src={returne} alt="return to game" /> 
+            <div className="bounce-in-bottom">
+            <img className="row" src={Row} alt="lose"/>
+                
             </div>
         </div>
-    );
-}
+        )
+    }
 
 export default LoserPage;
