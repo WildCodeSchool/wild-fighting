@@ -20,7 +20,7 @@ function Winner(){
                             <div className = "comment">
                                 {/*<button class="button">
 		                            <span>Bouton</span>	
-    </button>*/}</div>
+                                </button>*/}</div>
                 </div>
         </div>
     );

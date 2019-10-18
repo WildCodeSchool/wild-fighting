@@ -1,3 +1,13 @@
+/*web font*/
+/*@font-face {
+    font-family: 'pokemon_hollownormal';
+    src: url('pokemon_hollow-webfont.woff2') format('woff2'),
+         url('pokemon_hollow-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+/*web font*/
 /* Debut regle animation trophy*/
 @-webkit-keyframes roll-in-blurred-left {
     0% {
@@ -206,10 +216,14 @@
     }
    }   
 /* Fin anim return Arrow*/
+
 body {
     background-color: rgba(0, 255, 0, .8);
 
- }
+}
+/*h1{
+    font-family: 'webFont', Arial, sans-serif;
+}*/
 .winnerResult{
     display: flex;
     align-items: flex-start;
@@ -323,3 +337,6 @@ fin du code du menu*/
     -webkit-animation: bounce-in-bottom 1.1s 2s both;
             animation: bounce-in-bottom 1.1s 2s both;
    }
+   .bounce-in-bottom > img {
+    width: 50%;
+}
