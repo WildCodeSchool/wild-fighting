@@ -1,5 +1,4 @@
 import React from 'react';
-import Winner from'./components/Winner';
 import './App.css';
 
 function App() {
