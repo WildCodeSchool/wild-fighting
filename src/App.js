@@ -27,11 +27,12 @@ class App extends Component {
 import React from 'react';
 /*import logo from './logo.svg';*/
 import './App.css';
+import Winner from './components/Winner'
 
 function App() {
   return (
     <div className="App">
-    
+      <Winner />
     </div>
   );
 >>>>>>> Add animation on winner page
