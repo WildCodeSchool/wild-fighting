@@ -1,12 +1,12 @@
 import React,{Component} from 'react';
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import './App.css';
 import ShowChooseCard from './components/ShowChooseCard'
 
 class App extends Component {
     render(){
       return(
-        <BrowserRouter>
+        <Router>
           <Switch>
             <Route exact path="/" component={ShowChooseCard} />
             <Route path="/app" component={ShowChooseCard} />
@@ -14,7 +14,7 @@ class App extends Component {
             {/* <Route path="/win" component={Winner} />
             <Route path="/loose" component={Loser} /> */}
           </Switch>
-        </BrowserRouter>
+        </Router>
       )
     }
 }
