@@ -10,9 +10,9 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={ShowChooseCard} />
             <Route path="/app" component={ShowChooseCard} />
-            {/* <Route path="/load" component={Loader} /> */}
-            {/* <Route path="/win" component={Winner} />
-            <Route path="/loose" component={Loser} /> */}
+            <Route path="/load" component={Loader} />
+            <Route path="/win" component={Winner} />
+            <Route path="/loose" component={Loser} />
           </Switch>
         </Router>
       )
