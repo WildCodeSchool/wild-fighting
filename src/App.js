@@ -1,22 +1,30 @@
-import React,{Component} from 'react';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import './App.css';
-import ShowChooseCard from './components/ShowChooseCard'
+import React,{Component} from 'react'; // React et Component 
+import {                        // React Router
+    Route,                     // React Router
+    BrowserRouter,            // React Router
+    Switch,                  // React Router
+    NavLink                 // React Router
+} from 'react-router-dom'; // React Router
+import './App.css'; // CSS
+import Home from './components/Home';
+import History from './components/History';
+
 
 class App extends Component {
     render(){
-      return(
-        <Router>
-          <Switch>
-            <Route exact path="/" component={ShowChooseCard} />
-            <Route path="/app" component={ShowChooseCard} />
-            <Route path="/load" component={Loader} />
-            <Route path="/win" component={Winner} />
-            <Route path="/loose" component={Loser} />
-          </Switch>
-        </Router>
-      )
+        return(
+            <BrowserRouter>
+            <div>
+                <NavLink className="navLink" exact to="/">Acceuil</NavLink>
+                <NavLink className="navLink" to="/notre-histoire">Notre histoire</NavLink>
+                <Switch>
+                  <Route exact path="/" component={Home} />
+                  <Route path="/notre-histoire" component={History} />
+                </Switch>
+            </div>
+            </BrowserRouter>
+        )
     }
 }
 
-export default App;
+export default App
