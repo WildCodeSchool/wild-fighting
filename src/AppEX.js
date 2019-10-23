@@ -9,7 +9,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={ShowChooseCard} />
-            <Route path="/app" component={ShowChooseCard} />
+            <Route path="/app" component={PageCombat} />
             <Route path="/load" component={Loader} />
             <Route path="/win" component={Winner} />
             <Route path="/loose" component={Loser} />
