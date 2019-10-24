@@ -12,7 +12,7 @@ function LoserPage(){
                 <img className="cross" src={cross} alt="lose"/>
             </div>
             <div className="element-animation">
-            <h2>You lose</h2>
+            <h2>You loose</h2>
             </div>
             <div className="bounce-in-bottom">
             <img className="row" src={Row} alt="lose"/>
