@@ -222,13 +222,13 @@ body {
 
 }
 /*h1{
-    font-family: 'webFont', Arial, sans-serif;
+        
 }*/
 .winnerResult{
     display: flex;
     align-items: flex-start;
     margin-left: 9%;
-    margin-top: 4%;
+    margin-top: 3%;
     
 }
 .trophy{
