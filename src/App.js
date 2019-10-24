@@ -25,15 +25,18 @@ class App extends Component {
     }
 =======
 import React from 'react';
-/*import logo from './logo.svg';*/
 import './App.css';
 import Winner from './components/Winner'
 
 function App() {
   return (
+<<<<<<< HEAD
     <div className="App">
       <Winner />
     </div>
+=======
+    
+>>>>>>> Add modif
   );
 >>>>>>> Add animation on winner page
 }
