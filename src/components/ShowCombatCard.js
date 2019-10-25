@@ -5,8 +5,8 @@ import './CombatCard.css'
 function ShowCombatCard() {
   return (
     <div className="ShowCombatCard">
-      <CombatCard image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png" name="Pikachu" type="https://www.pokepedia.fr/images/e/e5/Miniature_Type_Feu_JCC.png" pv='70' />
-      <CombatCard image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png" name="Pikachu" type="https://www.pokepedia.fr/images/e/e5/Miniature_Type_Feu_JCC.png" pv='70' />
+      <CombatCard id="1" image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png" name="Pikachu" type={["ghost","normal"]} pv='70' />
+      <CombatCard id="2" image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png" name="Pikachu" type={["fighting","dragon"]} pv='70' />
     </div>
   );
 }

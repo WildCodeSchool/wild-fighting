@@ -107,3 +107,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
       transform:  translate(0px,0px) scale(1.5) ;
     }
   }
+  .type--image{
+      margin-left: 5px;
+  }
