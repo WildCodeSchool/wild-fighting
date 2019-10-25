@@ -6,13 +6,15 @@ class App extends Component {
     render(){
       return(
         <Router>
-          <Switch>
-            <Route exact path="/" component={ShowChooseCard} />
-            <Route path="/app" component={ShowCombatCard} />
-            <Route path="/load" component={Loading} />
-            <Route path="/win" component={Winner} />
-            <Route path="/loose" component={LoserPage} />
-          </Switch>
+          <div>
+              <Switch>
+                <Route exact path="/" component={ShowChooseCard} />
+                <Route path="/app" component={ShowCombatCard} />
+                <Route path="/load" component={Loading} />
+                <Route path="/win" component={Winner} />
+                <Route path="/loose" component={LoserPage} />
+              </Switch>
+          </div>
         </Router>
       )
     }
