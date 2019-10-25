@@ -1,4 +1,9 @@
 @import "~sanitize.css";
+@font-face{
+  font-family:"pokemon_hollow";
+  src:local('pokemon_hollow'),
+    url('./components/helpers/Pokemon Solid.ttf') format('truetype');
+}
 
 body {
   margin: 0;

@@ -31,12 +31,16 @@ import Winner from './components/Winner'
 function App() {
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div className="App">
       <Winner />
     </div>
 =======
     
 >>>>>>> Add modif
+=======
+    <Winner />
+>>>>>>> Add font and color font
   );
 >>>>>>> Add animation on winner page
 }
