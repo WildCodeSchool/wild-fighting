@@ -217,9 +217,6 @@
 body {
     background-color: rgba(0, 255, 0, .8);
 }
-/*h1{
-        
-}*/
 .winnerResult{
     display: flex;
     align-items: flex-start;
