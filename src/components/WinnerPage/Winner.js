@@ -11,7 +11,7 @@ function Winner(){
         <div className="winnerResult">
             <div className = 'roll-in-blurred-left'><img className="trophy" alt ="#" src={trophy}/></div>
                 <div className = "v_1">
-                    <div className='slide-in-blurred-top'><div className = "winResultTitle"><h1>VICTORY</h1></div></div>
+                    <div className='slide-in-blurred-top'><div className = "winResultTitle"><h1 style={{fontFamily:"pokemon_hollow"}}>VICTORY</h1></div></div>
                         <div className='rotate-in-center'><img className="winnerPokemon" src={mewtwo} alt='pokemon winner'/></div>
                             <div className = "option">
                                 {/*<button>Share it</button> */}

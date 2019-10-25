@@ -4,7 +4,7 @@ import Winner from './components/WinnerPage/Winner';
 
 function App() {
   return (
-    
+    <Winner />
   );
 }
 

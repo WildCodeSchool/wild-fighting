@@ -1,3 +1,9 @@
+@font-face{
+  font-family:"pokemon_hollow";
+  src:local('pokemon_hollow'),
+    url('./components/helpers/Pokemon Solid.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

@@ -1,12 +1,9 @@
 /*web font*/
-/*@font-face {
-    font-family: 'pokemon_hollownormal';
-    src: url('pokemon_hollow-webfont.woff2') format('woff2'),
-         url('pokemon_hollow-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}*/
+/*@font-face{
+        font-family:"Bauhaus";
+        src:local('BAUHS'),
+          url('./BAUHS.ttf') format('truetype');
+      }*/
 /*web font*/
 /* Debut regle animation trophy*/
 @-webkit-keyframes roll-in-blurred-left {
@@ -219,7 +216,6 @@
 
 body {
     background-color: rgba(0, 255, 0, .8);
-
 }
 /*h1{
         
@@ -231,6 +227,10 @@ body {
     margin-top: 3%;
     
 }
+.winResultTitle > h1 {
+        color: #fed41d;
+        text-shadow: #3457b7 10px 0px 0px;
+    }
 .trophy{
     width: 61%; 
     margin: 25px 0 0 0;
