@@ -1,6 +1,7 @@
 import React from 'react';
 import ChooseCard from './ChooseCard';
 
+
 function ShowChooseCard() {
   return (
     <div className="App">
