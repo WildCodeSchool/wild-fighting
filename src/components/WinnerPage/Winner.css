@@ -209,7 +209,7 @@
 /* Fin anim return Arrow*/
 
 
-.winnerResult{
+.winner-result{
         background-color: rgba(0, 255, 0, .8);
         display: flex;
         align-items: flex-start;
@@ -218,7 +218,7 @@
         min-width: 100vh;
 }
 
-.winResultTitle > h1 {
+.win-result-title > h1 {
         color: #fed41d;
         text-shadow: #3457b7 10px 0px 0px;
     }
@@ -237,7 +237,7 @@
     margin: 0 0 0 30px;
     justify-content: space-around;
 }
-.winResultTitle{
+.win-result-title{
     margin: 0 0 2px 0;
     font-size: 50px;
 }
@@ -245,7 +245,7 @@
     -webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
             animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
 }
-.winnerPokemon{   
+.winner-pokemon{   
     width: 80%;
     margin: 0 0 0 0;
 }
