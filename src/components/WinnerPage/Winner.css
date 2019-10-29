@@ -1,208 +1,208 @@
 
 /* Debut regle animation trophy*/
-@-webkit-keyframes roll-in-blurred-left {
+@keyframes roll-in-blurred-left {
     0% {
-      -webkit-transform: translateX(-1000px) rotate(-720deg);
+      transform: translateX(-1000px) rotate(-720deg);
               transform: translateX(-1000px) rotate(-720deg);
-      -webkit-filter: blur(50px);
+      filter: blur(50px);
               filter: blur(50px);
       opacity: 0;
     }
     100% {
-      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
               transform: translateX(0) rotate(0deg);
-      -webkit-filter: blur(0);
+      filter: blur(0);
               filter: blur(0);
       opacity: 1;
     }
    }
    @keyframes roll-in-blurred-left {
     0% {
-      -webkit-transform: translateX(-1000px) rotate(-720deg);
+      transform: translateX(-1000px) rotate(-720deg);
               transform: translateX(-1000px) rotate(-720deg);
-      -webkit-filter: blur(50px);
+      filter: blur(50px);
               filter: blur(50px);
       opacity: 0;
     }
     100% {
-      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
               transform: translateX(0) rotate(0deg);
-      -webkit-filter: blur(0);
+      filter: blur(0);
               filter: blur(0);
       opacity: 1;
     }
    }   
 /* Fin regle animation trophy*/
 /* Debut animation titre victory*/
-@-webkit-keyframes slide-in-blurred-top {
+@keyframes slide-in-blurred-top {
     0% {
-      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
               transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-      -webkit-transform-origin: 50% 0%;
+      transform-origin: 50% 0%;
               transform-origin: 50% 0%;
-      -webkit-filter: blur(40px);
+      filter: blur(40px);
               filter: blur(40px);
       opacity: 0;
     }
     100% {
-      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+      transform: translateY(0) scaleY(1) scaleX(1);
               transform: translateY(0) scaleY(1) scaleX(1);
-      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
               transform-origin: 50% 50%;
-      -webkit-filter: blur(0);
+      filter: blur(0);
               filter: blur(0);
       opacity: 1;
     }
    }
    @keyframes slide-in-blurred-top {
     0% {
-      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
               transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-      -webkit-transform-origin: 50% 0%;
+      transform-origin: 50% 0%;
               transform-origin: 50% 0%;
-      -webkit-filter: blur(40px);
+      filter: blur(40px);
               filter: blur(40px);
       opacity: 0;
     }
     100% {
-      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+      transform: translateY(0) scaleY(1) scaleX(1);
               transform: translateY(0) scaleY(1) scaleX(1);
-      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
               transform-origin: 50% 50%;
-      -webkit-filter: blur(0);
+      filter: blur(0);
               filter: blur(0);
       opacity: 1;
     }
    }
 /* Fin animation titre victory*/
 /* Debut anim winner pokemon*/
-@-webkit-keyframes rotate-in-center {
+@keyframes rotate-in-center {
     0% {
-      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
               transform: rotate(-360deg);
       opacity: 0;
     }
     100% {
-      -webkit-transform: rotate(0);
+      transform: rotate(0);
               transform: rotate(0);
       opacity: 1;
     }
    }
    @keyframes rotate-in-center {
     0% {
-      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
               transform: rotate(-360deg);
       opacity: 0;
     }
     100% {
-      -webkit-transform: rotate(0);
+      transform: rotate(0);
               transform: rotate(0);
       opacity: 1;
     }
    }
 /* Fin anim winner pokemon*/
 /* Debut anim return Arrow*/
-@-webkit-keyframes bounce-in-bottom {
+@keyframes bounce-in-bottom {
     0% {
-      -webkit-transform: translateY(500px);
+      transform: translateY(500px);
               transform: translateY(500px);
-      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
               animation-timing-function: ease-in;
       opacity: 0;
     }
     38% {
-      -webkit-transform: translateY(0);
+      transform: translateY(0);
               transform: translateY(0);
-      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
               animation-timing-function: ease-out;
       opacity: 1;
     }
     55% {
-      -webkit-transform: translateY(65px);
+      transform: translateY(65px);
               transform: translateY(65px);
-      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
               animation-timing-function: ease-in;
     }
     72% {
-      -webkit-transform: translateY(0);
+      transform: translateY(0);
               transform: translateY(0);
-      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
               animation-timing-function: ease-out;
     }
     81% {
-      -webkit-transform: translateY(28px);
+      transform: translateY(28px);
               transform: translateY(28px);
-      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
               animation-timing-function: ease-in;
     }
     90% {
-      -webkit-transform: translateY(0);
+      transform: translateY(0);
               transform: translateY(0);
-      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
               animation-timing-function: ease-out;
     }
     95% {
-      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
               transform: translateY(8px);
-      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
               animation-timing-function: ease-in;
     }
     100% {
-      -webkit-transform: translateY(0);
+      transform: translateY(0);
               transform: translateY(0);
-      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
               animation-timing-function: ease-out;
     }
    }
    @keyframes bounce-in-bottom {
     0% {
-      -webkit-transform: translateY(500px);
+      transform: translateY(500px);
               transform: translateY(500px);
-      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
               animation-timing-function: ease-in;
       opacity: 0;
     }
     38% {
-      -webkit-transform: translateY(0);
+      transform: translateY(0);
               transform: translateY(0);
-      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
               animation-timing-function: ease-out;
       opacity: 1;
     }
     55% {
-      -webkit-transform: translateY(65px);
+      transform: translateY(65px);
               transform: translateY(65px);
-      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
               animation-timing-function: ease-in;
     }
     72% {
-      -webkit-transform: translateY(0);
+      transform: translateY(0);
               transform: translateY(0);
-      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
               animation-timing-function: ease-out;
     }
     81% {
-      -webkit-transform: translateY(28px);
+      transform: translateY(28px);
               transform: translateY(28px);
-      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
               animation-timing-function: ease-in;
     }
     90% {
-      -webkit-transform: translateY(0);
+      transform: translateY(0);
               transform: translateY(0);
-      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
               animation-timing-function: ease-out;
     }
     95% {
-      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
               transform: translateY(8px);
-      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
               animation-timing-function: ease-in;
     }
     100% {
-      -webkit-transform: translateY(0);
+      transform: translateY(0);
               transform: translateY(0);
-      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
               animation-timing-function: ease-out;
     }
    }   
@@ -227,7 +227,7 @@
     margin: 25px 0 0 0;
 }
 .roll-in-blurred-left {
-    -webkit-animation: roll-in-blurred-left 1.00s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: roll-in-blurred-left 1.00s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
             animation: roll-in-blurred-left 1.00s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 .v_1 {
@@ -235,14 +235,13 @@
     display: flex;
     flex-direction: column;
     margin: 0 0 0 30px;
-    justify-content: space-around;
 }
 .win-result-title{
     margin: 0 0 2px 0;
     font-size: 50px;
 }
 .slide-in-blurred-top {
-    -webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
+    animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
             animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
 }
 .winner-pokemon{   
@@ -250,7 +249,7 @@
     margin: 0 0 0 0;
 }
 .rotate-in-center {
-    -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .option{
@@ -259,7 +258,7 @@
     margin: 20px 0 0 0;
     justify-content: space-around;
 }.bounce-in-bottom {
-    -webkit-animation: bounce-in-bottom 1.1s 2s both;
+    animation: bounce-in-bottom 1.1s 2s both;
             animation: bounce-in-bottom 1.1s 2s both;
    }
 .bounce-in-bottom > img {
