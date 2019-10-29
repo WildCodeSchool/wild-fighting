@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
-import Winner from './components/WinnerPage/Winner';
+import Winner from './components/Winner'
 
 function App() {
   return (
-    <Winner />
+    <div className="App">
+      <Winner />
+    </div>
   );
 }
 
