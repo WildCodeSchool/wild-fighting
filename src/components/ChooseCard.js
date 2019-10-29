@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './ChooseCard.css';
 
 class ChooseCard extends Component {
