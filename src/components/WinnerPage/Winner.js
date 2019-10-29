@@ -14,13 +14,11 @@ function Winner(){
                     <div className='slide-in-blurred-top'><div className = "win-result-title"><h1 style={{fontFamily:"pokemon_hollow"}}>VICTORY</h1></div></div>
                         <div className='rotate-in-center'><img className="winner-pokemon" src={mewtwo} alt='pokemon winner'/></div>
                             <div className = "option">
-                                {/*<button>Share it</button> */}
+                                {}
                                 <div className='bounce-in-bottom'><img src={returnArrow} alt='returnarrow'/></div>
                             </div>
                             <div className = "comment">
-                                {/*<button class="button">
-		                            <span>Bouton</span>	
-                                </button>*/}</div>
+                                {}</div>
                 </div>
         </div>
     );
