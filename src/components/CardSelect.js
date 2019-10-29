@@ -1,21 +1,11 @@
 import React, {Component} from 'react';
 import './ChooseCard.css';
 
-class ChooseCard extends Component {
+class CardSelect extends Component {
     constructor(props) {
         super(props)
-        this.state={
-            key:props.key,
-            image : props.image,
-            name: props.name,
-            type: props.type,
-            description: props.desc,
-            atks:props.atks,
-            id:props.id,
-            pv:props.pv
-        }
         this.type = this.type.bind(this)
-        console.log(this.state.type)
+        console.log(this.props.type)
     }
     type(type){
         let typeResult = []
@@ -38,7 +28,7 @@ class ChooseCard extends Component {
     return typeResult
     }
     componentDidMount(){
-        const typeResult = this.type(this.state.type)
+        const typeResult = this.type(this.props.type)
         let element = ""
             for(let i = 0;i<typeResult.length;i+=1){
                 element +=`<img src="https://raw.githubusercontent.com/WildCodeSchool/wild-fighting/images/images/${typeResult[i]}.png" class="type--image" />`
@@ -50,13 +40,13 @@ class ChooseCard extends Component {
             <section className="choose-card element-animation">
                 <div className="choose-card--content">
                     <div className="choose-card--info">
-                        <span className="choose-card--info-name">{this.state.name}</span>
+                        <span className="choose-card--info-name">{this.props.name}</span>
                         <div>
-                            <p className="choose-card--info-pv">{this.state.hp} HP</p>
+                            <p className="choose-card--info-pv">{this.props.hp} HP</p>
                             <div className={`types${this.props.id}`}></div>
                         </div>
                     </div>  
-                    <img className="choose-card--avatar" alt="Pokémon" src={this.state.image}/>
+                    <img className="choose-card--avatar" alt="Pokémon" src={this.props.image}/>
                     <div className="choose-card--atks">
                         <div className="choose-card--atks-panel">
                             <span className="choose-card--atks-panel-name">
@@ -77,4 +67,4 @@ class ChooseCard extends Component {
     }
 }
 
-export default ChooseCard
+export default CardSelect
