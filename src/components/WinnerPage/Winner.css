@@ -208,16 +208,16 @@
    }   
 /* Fin anim return Arrow*/
 
-body {
-    background-color: rgba(0, 255, 0, .8);
-}
+
 .winnerResult{
-    display: flex;
-    align-items: flex-start;
-    margin-left: 9%;
-    margin-top: 3%;
-    
+        background-color: rgba(0, 255, 0, .8);
+        display: flex;
+        align-items: flex-start;
+        padding: 1% 2% 2% 9%;
+        min-height: 100vh;
+        min-width: 100vh;
 }
+
 .winResultTitle > h1 {
         color: #fed41d;
         text-shadow: #3457b7 10px 0px 0px;
