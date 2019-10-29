@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import BattlePage from './components/BattlePage/BattlePage';
 import LoserPage from './components/Loser/LoserPage';
 import WinnerPage from './components/WinnerPage/WinnerPage';
 import ModalPage from './components/ModalPage';
