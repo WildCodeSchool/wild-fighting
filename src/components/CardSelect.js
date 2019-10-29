@@ -9,67 +9,20 @@ class CardSelect extends Component {
     type(type){
         let typeResult = []
         type.map(type=>{
-            switch (type) {
-                case "fire":
-                    typeResult.push('fire')
-                    break;
-                case "ice":
-                    typeResult.push('water')
-                    break;
-                case "water":
-                    typeResult.push('water')
-                    break;
-                case "plant":
-                    typeResult.push('plant')
-                    break;
-                case "grass":
-                    typeResult.push('plant')
-                    break;
-                case "bug":
-                    typeResult.push('plant')
-                    break;
-                case "electric":
-                    typeResult.push('electric')
-                    break;
-                case "psychic":
-                    typeResult.push('psychic')
-                    break;
-                case "poison":
-                    typeResult.push('psychic')
-                    break;
-                case "fighting":
-                    typeResult.push('fighting')
-                    break;
-                case "ground":
-                    typeResult.push('fighting')
-                    break;
-                case "rock":
-                    typeResult.push('fighting')
-                    break;
-                case "normal":
-                    typeResult.push('normal')
-                    break;
-                case "ghost":
-                    typeResult.push('ghost')
-                    break;
-                case "dragon":
-                    typeResult.push('dragon')
-                    break;
-                case "steel":
-                    typeResult.push('steel')
-                    break;
-                case "fairy":
-                    typeResult.push('fairy')
-                    break;
-                case "flying":
-                    typeResult.push('flying')
-                    break;
-                default:
-                    typeResult.push()
-                    break;
-            }
-            
-            return typeResult
+            type==="fire"                                               ? typeResult.push('fire'):
+            type==="water" || type === "ice"                            ? typeResult.push('water'):
+            type==="plant" || type === "grass" || type === "bug"        ? typeResult.push('plant'):
+            type==="electric"                                           ? typeResult.push('electrik'):
+            type==="psychic" || type === "poison"                       ? typeResult.push('psychic'):
+            type==="fighting" || type === "rock" || type === "ground"   ? typeResult.push('fighting'):
+            type==="normal"                                             ? typeResult.push('normal'):
+            type==="ghost"                                              ?typeResult.push('ghost'):
+            type==="dragon"                                             ? typeResult.push('dragon'): 
+            type==="steel"                                              ? typeResult.push('steel'): 
+            type==="fairy"                                              ? typeResult.push('fairy'): 
+            type==="flying"                                             ? typeResult.push('flying'): 
+            typeResult.push()
+            return null
     })
     return typeResult
     }
@@ -88,7 +41,7 @@ class CardSelect extends Component {
                     <div className="choose-card--info">
                         <span className="choose-card--info-name">{this.props.name}</span>
                         <div>
-                            <p className="choose-card--info-pv">{this.hp} HP</p>
+                            <p className="choose-card--info-pv">{this.props.hp} HP</p>
                             <div className={`types${this.props.id}`}></div>
                         </div>
                     </div>  
