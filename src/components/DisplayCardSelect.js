@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
-import ChooseCard from './ChooseCard';
+import CardSelect from './CardSelect';
 import axios from 'axios'
 
 
-class ShowChooseCard extends Component {
+class DisplayCardSelect extends Component {
   constructor(props){
     super(props)
     this.state = {
@@ -46,4 +46,4 @@ class ShowChooseCard extends Component {
   }
 }
 
-export default ShowChooseCard;
+export default DisplayCardSelect;
