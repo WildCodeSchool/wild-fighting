@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import './CardSelect.css';
 
 class CardSelect extends Component {
-    constructor(props) {
-        super(props)
+    constructor({name,image,id,type,hp}) {
+        super({name,image,id,type,hp})
         this.type = this.type.bind(this)
     }
     type(type){
@@ -41,7 +41,7 @@ class CardSelect extends Component {
                     <div className="choose-card--info">
                         <span className="choose-card--info-name">{this.props.name}</span>
                         <div>
-                            <p className="choose-card--info-pv">{this.props.hp} HP</p>
+                            <p className="choose-card--info-pv">{this.hp} HP</p>
                             <div className={`types${this.props.id}`}></div>
                         </div>
                     </div>  
