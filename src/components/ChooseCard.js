@@ -21,7 +21,7 @@ class ChooseCard extends Component {
         type.map(type=>{
             type==="fire"                                           ? typeResult.push('fire'):
             type==="water"|| type === "ice"                         ? typeResult.push('water'):
-            type==="plant"|| type === "grass"|| type === "insect"   ? typeResult.push('plant'):
+            type==="plant"|| type === "grass"|| type === "bug"   ? typeResult.push('plant'):
             type==="electrik"                                       ? typeResult.push('electrik'):
             type==="psychic"|| type === "poison"                    ? typeResult.push('psychic'):
             type==="fighting"|| type === "rock"|| type === "ground" ? typeResult.push('fighting'):
@@ -29,6 +29,7 @@ class ChooseCard extends Component {
             type==="ghost"                                          ?typeResult.push('ghost'):
             type==="dragon"                                         ? typeResult.push('dragon'): 
             type==="steel"                                         ? typeResult.push('steel'): 
+            type==="fairy"                                         ? typeResult.push('fairy'): 
             typeResult.push()
             
     })
