@@ -33,6 +33,7 @@
     }
    }   
 /* Fin regle animation trophy*/
+
 /* Debut animation titre victory*/
 @keyframes slide-in-blurred-top {
     0% {
@@ -75,6 +76,7 @@
     }
    }
 /* Fin animation titre victory*/
+
 /* Debut anim winner pokemon*/
 @keyframes rotate-in-center {
     0% {
@@ -101,6 +103,7 @@
     }
    }
 /* Fin anim winner pokemon*/
+
 /* Debut anim return Arrow*/
 @keyframes bounce-in-bottom {
     0% {
@@ -219,6 +222,7 @@
 }
 
 .win-result-title > h1 {
+        text-transform: uppercase;
         color: #fed41d;
         text-shadow: #3457b7 10px 0px 0px;
     }
@@ -230,7 +234,7 @@
     animation: roll-in-blurred-left 1.00s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
             animation: roll-in-blurred-left 1.00s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
-.v_1 {
+.v-1 {
     font-size: 20px;
     display: flex;
     flex-direction: column;
