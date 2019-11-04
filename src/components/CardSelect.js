@@ -2,28 +2,74 @@ import React, {Component} from 'react';
 import './CardSelect.css';
 
 class CardSelect extends Component {
-    constructor({name,image,id,type,hp}) {
-        super({name,image,id,type,hp})
+    constructor(props) {
+        super(props)
         this.type = this.type.bind(this)
-        console.log(this.props.type)
     }
     type(type){
         let typeResult = []
         type.map(type=>{
-            type==="fire"                                               ? typeResult.push('fire'):
-            type==="water" || type === "ice"                            ? typeResult.push('water'):
-            type==="plant" || type === "grass" || type === "bug"        ? typeResult.push('plant'):
-            type==="electric"                                           ? typeResult.push('electrik'):
-            type==="psychic" || type === "poison"                       ? typeResult.push('psychic'):
-            type==="fighting" || type === "rock" || type === "ground"   ? typeResult.push('fighting'):
-            type==="normal"                                             ? typeResult.push('normal'):
-            type==="ghost"                                              ?typeResult.push('ghost'):
-            type==="dragon"                                             ? typeResult.push('dragon'): 
-            type==="steel"                                              ? typeResult.push('steel'): 
-            type==="fairy"                                              ? typeResult.push('fairy'): 
-            type==="flying"                                             ? typeResult.push('flying'): 
-            typeResult.push()
-            return null
+            switch (type) {
+                case "fire":
+                    typeResult.push('fire')
+                    break;
+                case "ice":
+                    typeResult.push('water')
+                    break;
+                case "water":
+                    typeResult.push('water')
+                    break;
+                case "plant":
+                    typeResult.push('plant')
+                    break;
+                case "grass":
+                    typeResult.push('plant')
+                    break;
+                case "bug":
+                    typeResult.push('plant')
+                    break;
+                case "electric":
+                    typeResult.push('electric')
+                    break;
+                case "psychic":
+                    typeResult.push('psychic')
+                    break;
+                case "poison":
+                    typeResult.push('psychic')
+                    break;
+                case "fighting":
+                    typeResult.push('fighting')
+                    break;
+                case "ground":
+                    typeResult.push('fighting')
+                    break;
+                case "rock":
+                    typeResult.push('fighting')
+                    break;
+                case "normal":
+                    typeResult.push('normal')
+                    break;
+                case "ghost":
+                    typeResult.push('ghost')
+                    break;
+                case "dragon":
+                    typeResult.push('dragon')
+                    break;
+                case "steel":
+                    typeResult.push('steel')
+                    break;
+                case "fairy":
+                    typeResult.push('fairy')
+                    break;
+                case "flying":
+                    typeResult.push('flying')
+                    break;
+                default:
+                    typeResult.push()
+                    break;
+            }
+            
+            return typeResult
     })
     return typeResult
     }
