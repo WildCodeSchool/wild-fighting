@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import './App.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import DisplayCardFight from './components/DisplayCardFight'
+import DisplayCardFight from './components/CardFight/DisplayCardFight'
 import LoserPage from './components/Loser/LoserPage.js';
 
 
