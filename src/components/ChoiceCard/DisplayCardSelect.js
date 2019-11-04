@@ -42,10 +42,12 @@ class DisplayCardSelect extends Component {
           
           this.state.pokemon2&&this.state.pokemon1 ?
           (
+            
             <div className="App">
-            <CardSelect id="0" image={pokemon1.sprites.front_default} name={pokemon1.name} type={pokemon1.types.map(x=>x.type.name)} hp='70' />
+            {console.log("pomm",this.state.pokemon1)}
+            <CardSelect id="0" stats={pokemon1.stats} move={this.state.pokemon1.moves} image={pokemon1.sprites.front_default} name={pokemon1.name} type={pokemon1.types.map(x=>x.type.name)} hp={pokemon1.stats[5].base_stat} />
             <div className="App--VS"><button className="App--VS-button">V S</button></div>
-            <CardSelect id="1" image={pokemon2.sprites.front_default} name={pokemon2.name} type={pokemon2.types.map(x=>x.type.name)} hp='70' />
+            <CardSelect id="1" stats={pokemon2.stats} move={this.state.pokemon2.moves} image={pokemon2.sprites.front_default} name={pokemon2.name} type={pokemon2.types.map(x=>x.type.name)} hp={pokemon2.stats[5].base_stat} />
           </div>
           ):
           <Loading />

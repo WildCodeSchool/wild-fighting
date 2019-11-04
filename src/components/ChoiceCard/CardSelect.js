@@ -6,7 +6,9 @@ class CardSelect extends Component {
         super(props)
         this.state={
             type1:null,
-            type2:null
+            type2:null,
+            atk1:((Math.floor(Math.random() * (this.props.move.length - 1)) + 1)),
+            atk2:((Math.floor(Math.random() * (this.props.move.length - 1)) + 1))
         }
     }
     componentDidMount(){
@@ -43,11 +45,14 @@ class CardSelect extends Component {
     render(){
         return(
             <section className="choose-card element-animation">
+                {
+                    console.log(this.props.moveLength)
+                }
                 <div className="choose-card--content">
                     <div className="choose-card--info">
                         <span className="choose-card--info-name">{this.props.name}</span>
                         <div>
-                            <p className="choose-card--info-pv">{this.props.hp} HP</p>
+                            <p className="choose-card--info-pv">{10*Math.floor(this.props.hp/10)} HP</p>
                             <div>
                                 {this.state.type1 && <img src={this.state.type1} className="type--image" alt="type_logo" />}
                                 {this.state.type2 && <img src={this.state.type2} className="type--image" alt="type_logo" />}
@@ -58,15 +63,37 @@ class CardSelect extends Component {
                     <div className="choose-card--atks">
                         <div className="choose-card--atks-panel">
                             <span className="choose-card--atks-panel-name">
-                                Morsure
+                            {this.props.move[this.state.atk1].move.name}
                             </span>
-                            <span className="choose-card--atks--panel-damg">20</span>
+                            <span className="choose-card--atks--panel-damg">{
+                                10*Math.ceil(this.state.atk1
+                                *(
+                                    (
+                                        this.props.stats[0].base_stat+
+                                        this.props.stats[1].base_stat+
+                                        this.props.stats[2].base_stat+
+                                        this.props.stats[3].base_stat
+                                        )
+                                        /5
+                                        )/this.props.hp/10)
+                            }</span>
                         </div>
                         <div className="choose-card--atks-panel">
                             <span className="choose-card--atks-panel-name">
-                                Morsure
+                            {this.props.move[this.state.atk2].move.name}
                             </span>
-                            <span className="choose-card--atks--panel-damg">20</span>
+                            <span className="choose-card--atks--panel-damg">{
+                                10*Math.ceil(this.state.atk2
+                                *(
+                                    (
+                                        this.props.stats[0].base_stat+
+                                        this.props.stats[1].base_stat+
+                                        this.props.stats[2].base_stat+
+                                        this.props.stats[3].base_stat
+                                        )
+                                        /5
+                                        )/this.props.hp/10)
+                            }</span>
                         </div>
                     </div>
                 </div>
