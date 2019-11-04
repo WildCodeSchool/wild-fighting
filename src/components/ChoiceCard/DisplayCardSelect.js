@@ -11,33 +11,41 @@ class DisplayCardSelect extends Component {
       pokemon1 : null,
       pokemon2 : null
     }
-    this.axiosRequest= this.axiosRequest.bind(this)
+    this.getPokemon1= this.getPokemon1.bind(this)
+    this.getPokemon2= this.getPokemon2.bind(this)
   }
   componentDidMount(){
-    this.axiosRequest()
+    this.getPokemon1()
+    this.getPokemon2()
   }
-  axiosRequest(){
-    const min = Math.ceil(1);
-    const max = Math.floor(101);
-    const number =  Math.floor(Math.random() * (max - min)) + min;
+  getPokemon1(){
+    const number =  Math.floor(Math.random() * (101 - 1)) + 1;
     axios.get("https://pokeapi.co/api/v2/pokemon/"+number)
       .then( response => response.data )
-      .then( pokemon =>{
-        this.setState({pokemon2:pokemon}) 
-        console.log(this.state.pokemon2)})
+      .then( pokemon1 =>{
+        this.setState({pokemon1:pokemon1})})
+  }
+  getPokemon2(){
+    const number =  Math.floor(Math.random() * (101 - 1)) + 1;
+    axios.get("https://pokeapi.co/api/v2/pokemon/"+number)
+      .then( response => response.data )
+      .then( pokemon2 =>{
+        this.setState({pokemon2:pokemon2})})
   }
 
   render(){
+    const {pokemon1,pokemon2} = this.state;
     return (
       <div>
         
         {
-          this.state.pokemon2 ?
+          
+          this.state.pokemon2&&this.state.pokemon1 ?
           (
             <div className="App">
-            <CardSelect id="0" image={this.state.pokemon2.sprites.front_default} name={this.state.pokemon2.name} type={this.state.pokemon2.types.map(x=>x.type.name)} hp='70' />
+            <CardSelect id="0" image={pokemon1.sprites.front_default} name={pokemon1.name} type={pokemon1.types.map(x=>x.type.name)} hp='70' />
             <div className="App--VS"><button className="App--VS-button">V S</button></div>
-            <CardSelect id="1" image={this.state.pokemon2.sprites.front_default} name={this.state.pokemon2.name} type={this.state.pokemon2.types.map(x=>x.type.name)} hp='70' />
+            <CardSelect id="1" image={pokemon2.sprites.front_default} name={pokemon2.name} type={pokemon2.types.map(x=>x.type.name)} hp='70' />
           </div>
           ):
           <Loading />
