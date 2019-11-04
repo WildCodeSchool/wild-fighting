@@ -92,7 +92,9 @@
     transform-origin: 50% 50%;
     animation-fill-mode: forwards;
 }
-
+.dNONE{
+    display: none;
+}
 @keyframes animationVS {
     0% {
         transform: translate(0px, 0px);
