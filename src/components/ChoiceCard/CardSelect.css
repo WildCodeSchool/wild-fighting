@@ -29,6 +29,7 @@
     margin-right: 10px;
     font-weight: 600;
     font-family: 'Roboto';
+    text-transform: capitalize;
 }
 
 .choose-card--avatar {
@@ -81,7 +82,10 @@
 .choose-card--atks-panel-name img{
     margin-right: 10px;
 }
-
+.type--image{
+    width: 25px;
+    margin: 2.5px;
+}
 .element-animation {
     animation: animationVS linear 3s;
     animation-iteration-count: infinite;
