@@ -11,7 +11,7 @@ body {
 @font-face{
   font-family:"PokemonSolid";
   src:local('PokemonSolid'),
-  url('./components/helpers/Pokemon Solid.ttf') format('truetype');
+  url('./components/helpers/Pokemon_Solid.ttf') format('truetype');
  }
  
 .element-animation {
