@@ -165,10 +165,11 @@
   background-color: rgba(0, 255, 0, .8);
 }
 
-.win-result-title > h1 {
+.win-result-title{
   color: #fed41d;
   text-shadow: #3457b7 10px 0 0;
   text-transform: uppercase;
+  font-family:"pokemon_hollow";
 }
 .trophy {
   width: 61%;

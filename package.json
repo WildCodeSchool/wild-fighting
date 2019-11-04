@@ -5,7 +5,6 @@
   "dependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-font-face": "^0.2.1",
     "react-modal": "^3.10.1",
     "react-scripts": "3.2.0"
   },
