@@ -26,7 +26,7 @@ class App extends Component {
 =======
 import React from 'react';
 import './App.css';
-import Winner from './components/Winner'
+import Winner from './components/WinnerPage/Winner'
 
 function App() {
   return (
