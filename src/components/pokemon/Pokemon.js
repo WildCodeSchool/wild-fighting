@@ -53,6 +53,7 @@ export default class Pokemon extends Component {
 
   async componentDidMount() {
     const { pokemonIndex } = this.props.match.params;
+    console.log(pokemonIndex)
 
     // Urls for pokemon information
     const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonIndex}/`;
@@ -379,9 +380,6 @@ export default class Pokemon extends Component {
             }}>Choose them !</button>
           <div className="card-body">
             <h5 className="card-title text-center">Profile</h5>
-          <hr />
-          <div className="card-body">
-            <h5 class="card-title text-center">Profile</h5>
             <div className="row">
               <div className="col-md-6">
                 <div className="row">
