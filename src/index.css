@@ -8,10 +8,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 @font-face{
   font-family:"PokemonSolid";
   src:local('PokemonSolid'),
-  url('./components/helpers/Pokemon_Solid.ttf') format('truetype');
+  url('./fonts/Pokemon_Solid.ttf') format('truetype');
  }
  
 .element-animation {

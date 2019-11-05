@@ -10,10 +10,10 @@ class App extends Component {
         <Router>
           <div>
               <Switch>
-                <Route exact path="/" component={DisplayCardSelect} />
+                {/* <Route exact path="/" component={DisplayCardSelect} />
                 <Route path="/app" component={DisplayCardFight} />
                 <Route path="/load" component={Loading} />
-                <Route path="/win" component={Winner} />
+                <Route path="/win" component={Winner} /> */}
                 <Route path="/loose" component={LoserPage} />
               </Switch>
           </div>
