@@ -4,42 +4,43 @@ import './CardSelect.css';
 class CardSelect extends Component {
     constructor(props){
         super(props)
-        this.state={
-            type1:null,
-            type2:null,
-            atk1:((Math.floor(Math.random() * (this.props.move.length - 1)) + 1)),
-            atk2:((Math.floor(Math.random() * (this.props.move.length - 1)) + 1))
+        this.state = {
+            type1: null,
+            type2: null,
+            atk1: ((Math.floor(Math.random() * (this.props.move.length - 1)) + 1)),
+            atk2: ((Math.floor(Math.random() * (this.props.move.length - 1)) + 1))
         }
     }
     componentDidMount(){
-        const result = this.props.type.map(x=>{
+        const result = this.props.type.map(x => {
             switch (x) {
                 case "ground":
                     case "rock":
                         x="fighting"
                     return x 
                 case "ice":
-                    x="water"
+                    x = "water"
                     return x 
                 case "grass":
                     case "bug":
-                        x="plant"
+                        x = "plant"
                     return x 
                 case "poison":
-                    x="psychic"
+                    x = "psychic"
                     return x 
                 case "electric":
-                    x="electrik"
+                    x = "electrik"
                     return x 
                 default:  
                 return x           
             }
         })
-        if(this.props.type.length>=2){ 
-            this.setState({type1:`https://raw.githubusercontent.com/WildCodeSchool/wild-fighting/images/images/${result[0]}.png`})
-            this.setState({type2:`https://raw.githubusercontent.com/WildCodeSchool/wild-fighting/images/images/${result[1]}.png`})
-        }else{
-            this.setState({type1:`https://raw.githubusercontent.com/WildCodeSchool/wild-fighting/images/images/${result[0]}.png`})
+        if (this.props.type.length >= 2) { 
+            this.setState({type1: `https://raw.githubusercontent.com/WildCodeSchool/wild-fighting/images/images/${result[0]}.png`})
+            this.setState({type2: `https://raw.githubusercontent.com/WildCodeSchool/wild-fighting/images/images/${result[1]}.png`})
+        }
+        else {
+            this.setState({type1: `https://raw.githubusercontent.com/WildCodeSchool/wild-fighting/images/images/${result[0]}.png`})
         }
     }
     render(){
