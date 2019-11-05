@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
-import './CardFight.css'
+import './FightCard.css'
 
-class CardFight extends Component {
+class FightCard extends Component {
     constructor(props) {
         super(props);
         this.state={
@@ -77,4 +77,4 @@ class CardFight extends Component {
     }
 }
 
-export default CardFight
+export default FightCard

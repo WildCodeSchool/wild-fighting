@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import './App.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import DisplayCardFight from './components/CardFight/DisplayCardFight'
+import BattlePage from './components/BattlePage'
 import LoserPage from './components/Loser/LoserPage.js';
 
 
@@ -11,9 +11,9 @@ class App extends Component {
         <Router>
           <div>
               <Switch>
-                {/* <Route exact path="/" component={DisplayCardSelect} />
-                <Route path="/app" component={DisplayCardFight} />
-                <Route path="/load" component={Loading} />
+                {/* <Route exact path="/" component={DisplayCardSelect} />*/}
+                <Route path="/battle" component={BattlePage} />
+                {/*<Route path="/load" component={Loading} />
                 <Route path="/win" component={Winner} /> */}
                 <Route path="/loose" component={LoserPage} />
               </Switch>

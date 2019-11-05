@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
-import CardFight from './CardFight'
-import Loading from '../Loading/Loading'
+import FightCard from './FightCard/FightCard'
+import Loading from './Loading/Loading'
 import axios from 'axios'
 
-class DisplayCardFight extends Component {
+class BattlePage extends Component {
   constructor(props){
     super(props)
     this.state = {
@@ -41,8 +41,8 @@ class DisplayCardFight extends Component {
           this.state.pokemon2&&this.state.pokemon1 ?
           (
             <div className="App">
-            <CardFight id="0" image={pokemon1.sprites.front_default} name={pokemon1.name} type={pokemon1.types.map(x=>x.type.name)} hp='70' />
-            <CardFight id="1" image={pokemon2.sprites.front_default} name={pokemon2.name} type={pokemon2.types.map(x=>x.type.name)} hp='70' />
+            <FightCard id="0" image={pokemon1.sprites.front_default} name={pokemon1.name} type={pokemon1.types.map(x=>x.type.name)} hp='70' />
+            <FightCard id="1" image={pokemon2.sprites.front_default} name={pokemon2.name} type={pokemon2.types.map(x=>x.type.name)} hp='70' />
           </div>
           ):
           <Loading />
@@ -52,4 +52,4 @@ class DisplayCardFight extends Component {
   }
 }
 
-export default DisplayCardFight;
+export default BattlePage;
