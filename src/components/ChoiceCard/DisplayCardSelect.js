@@ -11,44 +11,30 @@ class DisplayCardSelect extends Component {
       pokemon1 : null,
       pokemon2 : null
     }
-    this.getPokemon1= this.getPokemon1.bind(this)
-    this.getPokemon2= this.getPokemon2.bind(this)
   }
   componentDidMount(){
-    this.getPokemon1()
-    this.getPokemon2()
+    this.getPokemon(1, this.props.pokemonIndex)
+    this.getPokemon(2, Math.floor(Math.random() * (100)) + 1)
   }
-  getPokemon1(){
-    const number =  Math.floor(Math.random() * (101 - 1)) + 1;
+  getPokemon = (index,number) => {
     axios.get("https://pokeapi.co/api/v2/pokemon/"+number)
       .then( response => response.data )
-      .then( pokemon1 =>{
-        this.setState({pokemon1:pokemon1})})
-  }
-  getPokemon2(){
-    const number =  Math.floor(Math.random() * (101 - 1)) + 1;
-    axios.get("https://pokeapi.co/api/v2/pokemon/"+number)
-      .then( response => response.data )
-      .then( pokemon2 =>{
-        this.setState({pokemon2:pokemon2})})
+      .then( pokemon =>{
+        this.setState({['pokemon'+index]:pokemon})})
   }
 
   render(){
     const {pokemon1,pokemon2} = this.state;
     return (
       <div>
-        
         {
-          
-          this.state.pokemon2&&this.state.pokemon1 ?
+          pokemon1 && pokemon2 ?
           (
-            
             <div className="App">
-            {console.log("pomm",this.state.pokemon1)}
-            <CardSelect id="0" stats={pokemon1.stats} move={this.state.pokemon1.moves} image={pokemon1.sprites.front_default} name={pokemon1.name} type={pokemon1.types.map(x=>x.type.name)} hp={pokemon1.stats[5].base_stat} />
-            <div className="App--VS"><button className="App--VS-button">V S</button></div>
-            <CardSelect id="1" stats={pokemon2.stats} move={this.state.pokemon2.moves} image={pokemon2.sprites.front_default} name={pokemon2.name} type={pokemon2.types.map(x=>x.type.name)} hp={pokemon2.stats[5].base_stat} />
-          </div>
+              <CardSelect id="0" stats={pokemon1.stats} move={this.state.pokemon1.moves} image={pokemon1.sprites.front_default} name={pokemon1.name} type={pokemon1.types.map(x=>x.type.name)} hp={pokemon1.stats[5].base_stat} />
+              <div className="App--VS"><button className="App--VS-button">V S</button></div>
+              <CardSelect id="1" stats={pokemon2.stats} move={this.state.pokemon2.moves} image={pokemon2.sprites.front_default} name={pokemon2.name} type={pokemon2.types.map(x=>x.type.name)} hp={pokemon2.stats[5].base_stat} />
+            </div>
           ):
           <Loading />
         }
