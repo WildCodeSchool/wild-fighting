@@ -7,13 +7,13 @@ import './Loading.css';
 function Loading() {
     return (
      <div className="container">
-         <div className = 'title'>
-             <div className='logo'>
-                <h1 style={{fontFamily:"PokemonSolid"}}>Wild Fighting</h1>
+         <div className="title">
+             <div className="logo">
+                <h1 className="Loading__title">Wild Fighting</h1>
             </div>
         </div> 
         <div className="heartbeat">
-            <img src={pokeball} alt='pokeball'/>
+            <img src={pokeball} alt="pokeball"/>
         </div> 
         <div className="picture">
             <img src={bang} alt="bang"/>
