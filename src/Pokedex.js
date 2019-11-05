@@ -16,7 +16,13 @@ class Pokedex extends Component {
           <div className="container">
             <Switch>
               <Route exact path="/" component={Dashboard} />
+<<<<<<< HEAD
               <Route exact path="/pokemon/:pokemonIndex" render={(props) => <Pokemon addPokemon={this.props.addPokemon} {...props} />} />
+=======
+              <Route exact path="/pokemon/:pokemonIndex">
+                <Pokemon addPokemon={this.props.addPokemon}/>
+              </Route>
+>>>>>>> WIP
             </Switch>
           </div>
         </div>
