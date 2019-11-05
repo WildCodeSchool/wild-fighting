@@ -4,45 +4,33 @@ import './FightCard.css'
 class FightCard extends Component {
     constructor(props) {
         super(props);
-        this.state={
-            type1:null,
-            type2:null
-        }
-    }
-    componentDidMount(){
-        const result = this.props.type.map(x=>{
+        const [type1, type2] = props.type.map(x => {
             switch (x) {
                 case "ground":
-                    case "rock":
-                        x="fighting"
-                    return x 
+                case "rock":
+                    return "fighting"
                 case "ice":
-                    x="water"
-                    return x 
+                    return "water"
                 case "grass":
-                    case "bug":
-                        x="plant"
-                    return x 
+                case "bug":
+                    return "plant"
                 case "poison":
-                    x="psychic"
-                    return x 
+                    return "psychic"
                 case "electric":
-                    x="electrik"
-                    return x 
+                    return "electrik"
                 default:  
-                return x           
+                    return x           
             }
         })
-        if(this.props.type.length>=2){ 
-            this.setState({type1:`https://raw.githubusercontent.com/WildCodeSchool/wild-fighting/images/images/${result[0]}.png`})
-            this.setState({type2:`https://raw.githubusercontent.com/WildCodeSchool/wild-fighting/images/images/${result[1]}.png`})
-        }else{
-            this.setState({type1:`https://raw.githubusercontent.com/WildCodeSchool/wild-fighting/images/images/${result[0]}.png`})
+        this.state = {
+            type1,
+            type2
         }
     }
+
     render(){
-        const {name,hp,image}=this.props
-        const {type1,type2}=this.state
+        const { name, hp, image } = this.props
+        const { type1, type2 } = this.state
         return(
             <section className="combat-card element-animation">
                 <div className="combat-card--content">
@@ -51,8 +39,8 @@ class FightCard extends Component {
                         <div>
                             <p className="combat-card--info-pv">{hp} HP</p>
                             <div>
-                                {type1 && <img src={type1} className="type--image" alt="type_logo" />}
-                                {type2 && <img src={type2} className="type--image" alt="type_logo" />}
+                                {type1 && <img src={`https://raw.githubusercontent.com/WildCodeSchool/wild-fighting/images/images/${type1}.png`} className="type--image" alt={`type ${type1}`} />}
+                                {type2 && <img src={`https://raw.githubusercontent.com/WildCodeSchool/wild-fighting/images/images/${type2}.png`} className="type--image" alt={`type ${type2}`} />}
                             </div>
                         </div>
                     </div>  
