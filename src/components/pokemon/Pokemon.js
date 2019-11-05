@@ -374,7 +374,7 @@ export default class Pokemon extends Component {
               </div>
             </div>
           </div>
-          <hr />
+          {/* <button onClick={e => {this.state.pokemonIndex && this.props.addPokemon(this.state.pokemonIndex)}}>Choose them !</button> */}
           <div className="card-body">
             <h5 class="card-title text-center">Profile</h5>
             <div className="row">
