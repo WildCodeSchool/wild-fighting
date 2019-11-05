@@ -66,6 +66,7 @@
 }
   
 
+
 @keyframes animationFrames{
   0% {
     transform:  translate(0px,0px)  ;
@@ -178,7 +179,12 @@
  }
 
  .container {
+<<<<<<< HEAD
     width:auto;
+=======
+    width: auto;
+    height: 100%;
+>>>>>>> Commit
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -268,4 +274,36 @@
     transform:  translate(0px,0px)  ;
   }
 }
+<<<<<<< HEAD
 >>>>>>> correction de la pull request
+=======
+
+@media (orientation: landscape) and (max-width : 768px){
+  .loser-poke {
+    height: 70vh;
+  }
+  .bounce-in-bottom {
+    z-index: 9;
+    margin-bottom: 3vh;
+  }
+  .element-animation {
+    margin-bottom: -41px;
+  }
+}
+
+@media (orientation: landscape) and (max-width : 380px){
+  .cross{
+    width: 12%;
+  }
+  .loser-poke {
+    height: 70vh;
+  }
+  .bounce-in-bottom {
+    margin-bottom: 10vh;
+  }
+  .element-animation {
+    font-size: 10px;
+  }
+
+}
+>>>>>>> Commit
