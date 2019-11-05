@@ -1,0 +1,170 @@
+.loser--title {
+  font-family: 'PokemonSolid';
+  margin: 25px;
+  margin-bottom: 40px;
+}
+
+.element-animation {
+  animation: animationFrames linear 0.8s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  z-index: 10;
+}
+
+@keyframes animationFrames {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  15% {
+    transform: translate(0px, -25px);
+  }
+
+  30% {
+    transform: translate(0px, 0px);
+  }
+
+  45% {
+    transform: translate(0px, -15px);
+  }
+
+  60% {
+    transform: translate(0px, 0px);
+  }
+
+  75% {
+    transform: translate(0px, -5px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+
+
+.cross {
+  width: 18%;
+  margin-top: 3%;
+}
+
+.row {
+  transition-delay: 2s;
+  width: 8%;
+  height: auto;
+}
+
+.bounce-in-bottom {
+  animation: bounce-in-bottom 1.1s 2s both;
+}
+
+@keyframes bounce-in-bottom {
+  0% {
+    transform: translateY(500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  55% {
+    transform: translateY(65px);
+    animation-timing-function: ease-in;
+  }
+
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  81% {
+    transform: translateY(28px);
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  95% {
+    transform: translateY(8px);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+.container {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: RGBA(255, 0, 0, .8);
+  font-size: 50px;
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.loser-poke {
+  height: 100vh;
+  position: absolute;
+  margin-top: 44vh;
+  z-index: 8;
+
+}
+
+
+
+.element-animation2 {
+  animation: animationFrames2 ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animationFrames2 {
+  0% {
+    opacity: 0;
+    transform: translate(-1500px, 0px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate(30px, 0px);
+  }
+
+  80% {
+    transform: translate(-10px, 0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@media (orientation: landscape) and (max-width : 768px) {
+  .loser-poke {
+    height: 70vh;
+  }
+
+  .bounce-in-bottom {
+    z-index: 9;
+    margin-bottom: 3vh;
+  }
+
+  .element-animation {
+    margin-bottom: -41px;
+  }
+}
