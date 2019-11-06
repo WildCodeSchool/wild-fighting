@@ -1,4 +1,4 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import BattlePage from './components/BattlePage/BattlePage'
@@ -8,7 +8,7 @@ import Loading from './components/Loading/Loading'
 
 class App extends Component {
   render(){
-  return(
+  return (
     <Router>
       <div>
         <Switch>
