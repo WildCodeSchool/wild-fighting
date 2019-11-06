@@ -11,6 +11,7 @@ import './App.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import BattlePage from './components/BattlePage/BattlePage'
 import LoserPage from './components/Loser/LoserPage';
+<<<<<<< HEAD
 import Loading from './components/Loading/Loading'
 
 
@@ -48,10 +49,15 @@ class App extends Component {
       )
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import React from 'react';
 import LoserPage from './components/Loser/LoserPage.js';
 
+=======
+=======
+import TestApi from './components/TestApi';
+>>>>>>> resolution de conflit
 /*import logo from './logo.svg';
 import './App.css';*/
 
@@ -60,12 +66,19 @@ function App() {
   return (
     <div className="App">
      <LoserPage />
+<<<<<<< HEAD
     </div>
   );
 >>>>>>> page loser fonctionnel
 >>>>>>> page loser fonctionnel
 =======
 >>>>>>> ajout pour rebase
+=======
+     <TestApi />
+    </div>
+  );
+>>>>>>> ajout API dans la console
+>>>>>>> resolution de conflit
 }
 
 export default App;
