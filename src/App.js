@@ -12,22 +12,34 @@ import Onglet from './components/Onglet/Onglet';
 
 
 class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div>
-          <Onglet />
-          <Switch>
-            {/* <Route exact path="/" component={DisplayCardSelect} /> */}
-            <Route path="/battle" component={BattlePage} />
-            <Route path="/load" component={Loading} />
-            <Route path="/win" component={WinnerPage} />
-            <Route path="/pokedex" component={ModalPage} />
-            <Route path="/loose" component={LoserPage} />
-          </Switch>
-        </div>
-      </Router>
-    );
-  }
+    constructor(props){
+        super(props)
+        this.state={
+            pokemonIndex:null
+        }
+    }
+    addPokemon = (pkIndex) => {
+        this.setState({pokemonIndex:pkIndex})
+        console.log(pkIndex)
+    }
+  render () {
+      return (
+        <Router>
+          <div className="App">
+              <Onglet />
+              <Switch>
+                <Route exact path="/">
+                  <DisplayCardSelect pokemonIndex={this.state.pokemonIndex} />
+                </Route>
+                <Route path="/battle" component={BattlePage} />
+                <Route path="/load" component={Loading} />
+                <Route path="/win" component={WinnerPage} />
+                <Route path="/loose" component={LoserPage} />
+                <Route path="/pokedex" component={ModalPage} />
+              </Switch>
+          </div>
+        </Router>
+      )
+    }
 }
 export default App;
