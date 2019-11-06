@@ -6,7 +6,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import BattlePage from './components/BattlePage/BattlePage';
 import LoserPage from './components/Loser/LoserPage';
 import Loading from './components/Loading/Loading';
-import DisplayCardSelect from './components/ChoiceCard/DisplayCardSelect';
+import DisplayCardSelect from './components/SelectCard/SelectPage';
 import ModalPage from './components/ModalPage';
 import Onglet from './components/Onglet/Onglet';
 
@@ -14,10 +14,10 @@ class App extends Component {
     constructor(props){
         super(props)
         this.state={
-            pokemonIndex:null
+            pokemonIndex:15
         }
     }
-    addPokemon = (pkIndex) => {
+    addPokemon = ( pkIndex ) => {
         this.setState({pokemonIndex:pkIndex})
         console.log(pkIndex)
     }
