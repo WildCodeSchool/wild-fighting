@@ -44,10 +44,8 @@ class SelectCard extends Component {
 
   render() {
     const {
-      type,
       move,
       image,
-      id,
       hp,
       name,
       stats,
