@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "~sanitize.css";
 
 body {
@@ -15,15 +14,6 @@ body {
   src:local('PokemonSolid'),
   url('./fonts/Pokemon_Solid.ttf') format('truetype');
  }
-=======
-@font-face{
-  font-family:"PokemonSolid";
-  src:local('PokemonSolid'),
-  url('./components/helpers/Pokemon Solid.ttf') format('truetype');
- }
-
-
->>>>>>> ajout font familly pokemon
  
 .element-animation {
     color: #FFCB05;
