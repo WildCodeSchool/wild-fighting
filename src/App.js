@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React,{ Component } from 'react';
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> ajout pour rebase
 import React,{Component} from 'react';
 >>>>>>> page loser fonctionnel
 import './App.css';
@@ -44,6 +47,7 @@ class App extends Component {
         </Router>
       )
     }
+<<<<<<< HEAD
 =======
 import React from 'react';
 import LoserPage from './components/Loser/LoserPage.js';
@@ -60,6 +64,8 @@ function App() {
   );
 >>>>>>> page loser fonctionnel
 >>>>>>> page loser fonctionnel
+=======
+>>>>>>> ajout pour rebase
 }
 
 export default App;
