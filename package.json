@@ -8,6 +8,7 @@
     "react-dom": "^16.10.2",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "sanitize.css": "^11.0.0"
@@ -15,6 +16,8 @@
 =======
     "react-font-face": "^0.2.1",
 >>>>>>> Add font and color font
+=======
+>>>>>>> 8867d347b2b033af818fafd994cbe5b9d77f8215
     "react-modal": "^3.10.1",
     "react-scripts": "3.2.0"
 >>>>>>> Add all
