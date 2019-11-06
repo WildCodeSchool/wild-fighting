@@ -12,6 +12,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import BattlePage from './components/BattlePage/BattlePage'
 import LoserPage from './components/Loser/LoserPage';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Loading from './components/Loading/Loading'
 
 
@@ -60,11 +61,16 @@ import TestApi from './components/TestApi';
 >>>>>>> resolution de conflit
 /*import logo from './logo.svg';
 import './App.css';*/
+=======
+
+
+>>>>>>> correction de la pull request
 
 
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
      <LoserPage />
 <<<<<<< HEAD
     </div>
@@ -75,6 +81,9 @@ function App() {
 >>>>>>> ajout pour rebase
 =======
      <TestApi />
+=======
+      <LoserPage />
+>>>>>>> resolve conflict
     </div>
   );
 >>>>>>> ajout API dans la console

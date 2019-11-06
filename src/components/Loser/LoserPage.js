@@ -12,6 +12,7 @@ import PokeFinal from './pokefinal.png';
 function LoserPage(){
         return(
             <div className="container">
+<<<<<<< HEAD
             <div className="element-animation2">
                 <img className="cross" src={cross} alt="lose"/>
             </div>
@@ -28,4 +29,20 @@ function LoserPage(){
 
 export default LoserPage;
 
+=======
+                <div className="loserpoke">
+                    <div className="element-animation2">
+                        <img className="cross" src={cross} alt="lose"/>
+                    </div>
+                <div className="element-animation">
+                    <h2>You loose</h2>
+                </div>
+                <div className="bounce-in-bottom">
+                    <img className="row" src={Row} alt="lose"/>
+                </div>
+                </div>
+            </div>
+        )
+    }
+>>>>>>> correction de la pull request
 
