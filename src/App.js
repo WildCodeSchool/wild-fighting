@@ -5,8 +5,13 @@ import './App.css';
 import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
 import BattlePage from './components/BattlePage/BattlePage';
 import LoserPage from './components/Loser/LoserPage';
+<<<<<<< HEAD
 import WinnerPage from './components/WinnerPage/WinnerPage';
 import SelectPage from './components/SelectPage/SelectPage';
+=======
+import Loading from './components/Loading/Loading';
+import DisplayCardSelect from './components/ChoiceCard/DisplayCardSelect';
+>>>>>>> WIP
 import ModalPage from './components/ModalPage';
 import Onglet from './components/Onglet/Onglet';
 

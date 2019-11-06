@@ -474,7 +474,6 @@ export default class Pokemon extends Component {
           </div>
         </div>
       </div>
-      </div>
     );
   }
 }
