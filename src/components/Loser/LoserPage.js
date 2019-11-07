@@ -18,7 +18,7 @@ function LoserPage(){
                 <div className="element-animation">
                     <h2 className="loser--title">You loose</h2>
                 </div>
-                <a href>
+                <a href="http://localhost:3000/battle">
                 <div className="bounce-in-bottom">
                     <img className="row" src={Row} alt="lose"/>
                 </div>
