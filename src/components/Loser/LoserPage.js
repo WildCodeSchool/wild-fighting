@@ -23,6 +23,9 @@ function LoserPage(){
                     <img className="row" src={Row} alt="lose"/>
                 </div>
                 </a>
+                <div>
+                    <img  className="pokeball--fond" src={PokeFinal} alt="pokeball_fond-Png"/>
+                </div>
             </div>
     )
 }
