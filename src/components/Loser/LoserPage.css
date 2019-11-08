@@ -102,9 +102,11 @@
   }
 }
 
+
+
 .container {
-  width: auto;
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,15 +114,17 @@
   background-color: RGBA(255, 0, 0, .8);
   font-size: 50px;
   margin-bottom: 0;
-  overflow: hidden;
+  overflow: none;
   position: relative;
 }
 
-.loser-poke {
-  height: 100vh;
-  position: absolute;
-  margin-top: 44vh;
-  z-index: 8;
+.pokeball--fond{
+  position:fixed;
+  left:0;
+  bottom:0;
+  margin:0;
+  padding:0;
+  width:35%;
 
 }
 
@@ -155,25 +159,75 @@
 }
 
 @media (orientation: landscape) and (max-width : 768px) {
-  .loser-poke {
-    height: 70vh;
+  .container{
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .loser--title {
+    margin: 0;
+    margin-bottom: 0px;
+    font-size:25px ;
   }
 
   .bounce-in-bottom {
     z-index: 9;
-    margin-bottom: 3vh;
+    margin-bottom: 0;
   }
 
   .element-animation {
-    margin-bottom: -41px;
+    margin-bottom: 0;
+  }
+
+  .pokeball--fond{
+    display:none;
+  }
+  
+  .row {
+    width:5%;
+    margin-bottom: 30px;
+  }
+  
+  .cross {
+    width: 8%;
+    margin-top: -3%;
   }
 }
 
-.pokeball--fond{
-  position:fixed;
-  left:0;
-  bottom:0;
-  margin:0;
-  padding:0;
-  width:35%;
+@media (orientation: landscape) and (max-width : 1167px) {
+
+  .loser--title {
+    margin: 0;
+    margin-bottom: 0px;
+    font-size:55px ;
+  }
+
+  .bounce-in-bottom {
+    z-index: 9;
+    margin-bottom: 0;
+  }
+
+  .element-animation {
+    margin-bottom: 0;
+
+  }
+
+  .pokeball--fond{
+    display:none;
+  }
+  
+  .row {
+    width:5%;
+    margin-bottom: 20%;
+
+  }
+  
+  .cross {
+    width: 8%;
+    
+
+
+  }
+
+
 }

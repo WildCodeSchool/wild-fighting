@@ -12,6 +12,7 @@ import PokeFinal from './pokefinal.png';
 function LoserPage(){
         return(
             <div className="container">
+                <div className="container2">
                 <div className="element-animation2">
                     <img className="cross" src={cross} alt="lose"/>
                 </div>
@@ -23,9 +24,9 @@ function LoserPage(){
                     <img className="row" src={Row} alt="lose"/>
                 </div>
                 </a>
-                <div>
+                
                     <img  className="pokeball--fond" src={PokeFinal} alt="pokeball_fond-Png"/>
-                </div>
+                    </div>
             </div>
     )
 }
