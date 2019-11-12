@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import spinner from '../layout/spinner.gif';
+import classNames from 'classnames';
+import spinner from './spinner.gif';
+import './PokemonCard.css';
 
 const Sprite = styled.img`
   width: 5em;
@@ -35,64 +37,58 @@ const StyledLink = styled(Link)`
     text-decoration: none;
   }
 `;
+
+
 class PokemonCard extends Component {
-  state = {
-    name: '',
-    imageUrl: '',
-    pokemonIndex: '',
-    imageLoading: true,
-    toManyRequests: false
-  };
+  constructor(props) {
+    super(props);
 
-  componentDidMount() {
-    const { name, url } = this.props;
-
-    const pokemonIndex = url.split('/')[url.split('/').length - 2];
-    //const imageUrl = `./sprites/pokemon/${pokemonIndex}.png`;
-    const imageUrl = `https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonIndex}.png?raw=true`;
-
-    this.setState({ name, imageUrl, pokemonIndex });
+    this.state = {
+      imageLoading: true,
+      tooManyRequests: false,
+    };
   }
 
   render() {
+    const { imageLoading, tooManyRequests } = this.state;
+    const { url, name } = this.props;
+    const splitUrl = url.split('/');
+    const pokemonIndex = splitUrl[splitUrl.length - 2];
+
     return (
       <div className="col-md-3 col-sm-6 mb-5">
-        <StyledLink to={`pokemon/${this.state.pokemonIndex}`}>
+        <StyledLink to={`pokemon/${pokemonIndex}`}>
           <Card className="card">
-            <h5 className="card-header">{this.state.pokemonIndex}</h5>
-            {this.state.imageLoading ? (
+            <h5 className="card-header">{pokemonIndex}</h5>
+            {imageLoading && (
               <img
                 src={spinner}
-                style={{ width: '5em', height: '5em' }}
-                className="card-img-top rounded mx-auto d-block mt-2"
-               alt="top-rounded-card"/>
-            ) : null}
+                className="card-img-top rounded mx-auto d-block mt-2 image-loading"
+                alt="top-rounded-card"
+              />
+            )}
             <Sprite
-              className="card-img-top rounded mx-auto mt-2"
-              src={this.state.imageUrl}
+              src={`https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonIndex}.png?raw=true`}
               onLoad={() => this.setState({ imageLoading: false })}
-              onError={() => this.setState({ toManyRequests: true })}
-              style={
-                this.state.toManyRequests
-                  ? { display: 'none' }
-                  : this.state.imageLoading
-                  ? null
-                  : { display: 'block' }
-              }
+              onError={() => this.setState({ tooManyRequests: true })}
+              className={classNames('card-img-top rounded mx-auto mt-2', {
+                'sprite-too-many-requests': tooManyRequests,
+                'sprite-image-ready': !imageLoading,
+              })}
             />
-            {this.state.toManyRequests ? (
+            {tooManyRequests && (
               <h6 className="mx-auto">
                 <span className="badge badge-danger mt-2">
-                  To Many Requests
+                  Too Many Requests
                 </span>
               </h6>
-            ) : null}
+            )}
             <div className="card-body mx-auto">
               <h6 className="card-title">
-                {this.state.name
+                {name
                   .toLowerCase()
                   .split(' ')
-                  .map(s => s.charAt(0).toUpperCase() + s.substring(1))
+                  .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
                   .join(' ')}
               </h6>
             </div>

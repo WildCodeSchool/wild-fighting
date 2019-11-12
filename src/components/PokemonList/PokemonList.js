@@ -1,35 +1,30 @@
 import React, { Component } from 'react';
 import PokemonCard from '../PokemonCard/PokemonCard';
-import Loading from '../layout/Loading';
 import axios from 'axios';
 
 class PokemonList extends Component {
   state = {
-    url: 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=52',
-    pokemon: null
+    pokemons: []
   };
 
   async componentDidMount() {
-    const res = await axios.get(this.state.url);
-    this.setState({ pokemon: res.data['results'] });
+    const res = await axios.get('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=52');
+    this.setState({ pokemons: res.data['results'] });
   }
 
   render() {
     return (
-      <div>
-        {this.state.pokemon ? (
-          <div className="row">
-            {this.state.pokemon.map(pokemon => (
+      <div className="PokemonList">
+        {this.state.pokemons.length > 0
+          ? this.state.pokemons.map(pokemon => (
               <PokemonCard
                 key={pokemon.name}
                 name={pokemon.name}
                 url={pokemon.url}
               />
-            ))}
-          </div>
-        ) : (
-          <Loading />
-        )}
+            ))
+          : <h5>Getting Pokemon...</h5>
+        }
       </div>
     );
   }

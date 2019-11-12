@@ -1,0 +1,12 @@
+.image-loading {
+    width: 5em;
+    height: 5em; 
+}
+
+.sprite-too-many-requests {
+    display: none;
+}
+
+.sprite-image-ready {
+    display: 'block';
+}
