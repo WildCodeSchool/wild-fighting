@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import PokemonList from '../pokemon/PokemonList';
+import React from 'react';
+import PokemonList from '../PokemonList/PokemonList';
 
-export default class Dashboard extends Component {
-  render() {
-    return (
-      <div className="row">
-        <div className="col">
-          <PokemonList />
-        </div>
+function Dashboard() {
+  return (
+    <div className="row">
+      <div className="col">
+        <PokemonList />
       </div>
-    );
-  }
+    </div>
+  );
 }
+
+export default Dashboard;

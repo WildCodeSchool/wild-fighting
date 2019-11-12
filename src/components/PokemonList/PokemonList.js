@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PokemonCard from './PokemonCard';
+import PokemonCard from '../PokemonCard/PokemonCard';
 import Loading from '../layout/Loading';
 import axios from 'axios';
 
