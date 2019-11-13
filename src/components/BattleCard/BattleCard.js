@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /* eslint-disable react/prop-types */
+=======
+>>>>>>> Battle page work but without AI for encounter
 /* eslint-disable linebreak-style */
 import React, { Component } from 'react';
 import './BattleCard.css';
@@ -52,7 +55,11 @@ class BattleCard extends Component {
             <span className="BattleCard__info-name">{ name }</span>
             <div>
               <p className="BattleCard__info-pv">
+<<<<<<< HEAD
                 {10 * Math.floor(hp / 10) < 0 ? 0 : 10 * Math.floor(hp / 10) }
+=======
+                {10 * Math.floor(hp / 10)<0 ? 0 : 10 * Math.floor(hp / 10) }
+>>>>>>> Battle page work but without AI for encounter
                 HP
               </p>
               <div>
@@ -63,11 +70,20 @@ class BattleCard extends Component {
           </div>
           <img className="BattleCard__avatar" alt="Pokémon" src={image} />
           <div className="BattleCard__atks">
+<<<<<<< HEAD
             <div
               className="BattleCard__atks-panel"
               onClick={() => {
                 this.props.doDamage(damageAtk1, id === '0' ? 'pokemon2' : 'pokemon1');
               }}
+=======
+            <div 
+              className="BattleCard__atks-panel" 
+              onClick={(e) =>
+                {
+                  this.props.doDamage(damageAtk1,id === "0" ?"pokemon2":"pokemon1")
+                }}
+>>>>>>> Battle page work but without AI for encounter
             >
               <span className="BattleCard__atks-panel-name">
                 {atk1}
@@ -76,11 +92,20 @@ class BattleCard extends Component {
                 {damageAtk1}
               </span>
             </div>
+<<<<<<< HEAD
             <div
               className="BattleCard__atks-panel"
               onClick={(e) => {
                 this.props.doDamage(damageAtk1, id === '0' ? 'pokemon2' : 'pokemon1');
               }}
+=======
+            <div 
+              className="BattleCard__atks-panel" 
+              onClick={(e) =>
+                {
+                  this.props.doDamage(damageAtk1,id === "0" ?"pokemon2":"pokemon1")
+                }}
+>>>>>>> Battle page work but without AI for encounter
             >
               <span className="BattleCard__atks-panel-name">
                 {atk2}
