@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import Pokedex from './Pokedex/Pokedex';
 import Modal from 'react-responsive-modal';
 import PokeList from './PokeList/PokeList';
  
