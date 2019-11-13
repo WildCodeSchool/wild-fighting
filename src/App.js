@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
+//import './App.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import BattlePage from './components/BattlePage/BattlePage'
 import LoserPage from './components/Loser/LoserPage';
 import Loading from './components/Loading/Loading';
 import WinnerPage from './components/WinnerPage/WinnerPage';
+import ModalPage from './components/ModalPage';
 
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
           <Route path="/battle" component={BattlePage} />
           <Route path="/load" component={Loading} />
           <Route path="/win" component={WinnerPage} />
+          <Route path="/pokedex" component={ModalPage} />
           <Route path="/loose" component={LoserPage} />
         </Switch>
       </div>
