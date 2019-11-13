@@ -83,4 +83,4 @@ class BattlePage extends Component {
   }
 }
 
-export default CardSelect
+export default BattlePage;

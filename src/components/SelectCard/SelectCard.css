@@ -14,12 +14,11 @@
 .SelectCard__info {
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
     align-items: center;
     padding: 20px;
-=======
     padding: 25px;
->>>>>>> Correct SelectPage and SelectCard with ESLint
+    align-items: center;
+    padding: 20px;
 }
 
 .SelectCard__info div {
@@ -31,10 +30,8 @@
 .SelectCard__info-pv,
 .SelectCard__info-name {
     font-size: 1.5em;
-<<<<<<< HEAD
     margin: 0;
-=======
->>>>>>> Correct SelectPage and SelectCard with ESLint
+    margin: 0;
     margin-right: 10px;
     font-weight: 600;
     font-family: 'Roboto';
@@ -92,12 +89,8 @@
 .SelectCard__atks-panel-name img{
     margin-right: 10px;
 }
-<<<<<<< HEAD
 .type--image{
-=======
-.type-image{
     width: 25px;
->>>>>>> Correct SelectPage and SelectCard with ESLint
     margin: 2.5px;
 }
 .element-animation {

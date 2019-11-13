@@ -40,12 +40,6 @@ class SelectCard extends Component {
       atk2,
       damageAtk1,
       damageAtk2,
-      type,
-      move,
-      image,
-      hp,
-      name,
-      stats,
     } = this.props;
     const {
       type1,
