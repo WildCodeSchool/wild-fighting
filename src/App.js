@@ -62,7 +62,7 @@ class App extends Component {
                   }
                 </Route>
                 <Route path="/load" component={Loading} />
-                {/*<Route path="/win" component={Winner} /> */}
+                
                 <Route path="/loose" component={LoserPage} />
                 <Route path="/pokedex" component={ModalPage} />
               </Switch>

@@ -1,17 +1,17 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable linebreak-style */
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import BattleCard from '../BattleCard/BattleCard';
-import Loading from '../Loading/Loading'
-import './BattlePage.css'
-import axios from 'axios'
+import Loading from '../Loading/Loading';
+import './BattlePage.css';
+import axios from 'axios';
 
 class BattlePage extends Component {
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
       pokemon1 : null,
       pokemon2 : null,
-
     }
   }
   componentDidMount(){
