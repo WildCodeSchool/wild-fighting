@@ -1,0 +1,39 @@
+.image-loading {
+    width: 5em;
+    height: 5em;
+    margin-left: 1em; 
+}
+
+.sprite-too-many-requests {
+    display: none;
+}
+
+.sprite-image-ready {
+    display: 'block';
+}
+
+.sprite-image-ready {
+    display: 'block';
+}
+
+
+h5.card-header {
+    margin-left: 14px;
+    margin-top: 10px;
+  }
+  
+  .card-body {
+    margin: 23px;
+    border-top: 1px solid yellowgreen;
+    margin-top: -1vh;
+  }
+  
+  .dashboard {
+    width: 20%;
+    border: 2px solid powderblue;
+    border-radius: 8px;
+    margin-bottom: 9px;
+    margin-right: 1px;
+    background-color: #ffcb05;
+    height: 29vh;
+  }

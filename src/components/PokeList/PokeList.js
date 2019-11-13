@@ -1,24 +1,36 @@
-import React from 'react';
-import { pokeClasses } from '../PokeClasses';
-import PokeCell from '../PokeCell/PokeCell';
+import React, { Component } from 'react';
+import PokemonCard from '../PokemonCard/PokemonCard';
+import axios from 'axios';
 import './PokeList.css';
 
-const PokeList = ({ handleOnClick }) => {
-    const cells = pokeClasses.map(pokeClass => {
-      return (
-        <PokeCell 
-          key={pokeClass.id} 
-          pokeClass={pokeClass} 
-          handleOnClick={handleOnClick}
-        />
-      );
-    });
-  
-    return (
-      <section className="poke-list">
-        {cells}
-      </section>
-    )
+class PokemonList extends Component {
+  state = {
+    pokemons: []
+  };
+
+  async componentDidMount() {
+    const res = await axios.get('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=56');
+    this.setState({ pokemons: res.data['results'] });
+    console.log(res.data['results'] )
   }
-  
-  export default PokeList;
+
+  render() {
+    
+    return (
+      <div className="PokeList">
+        {this.state.pokemons.length > 0
+          ? this.state.pokemons.map(pokemon => (
+              <PokemonCard
+                key={pokemon.name}
+                name={pokemon.name}
+                url={pokemon.url}
+              />
+            ))
+          : <h5>Getting Pokemon...</h5>
+        }
+      </div>
+    );
+  }
+}
+
+export default PokemonList;
