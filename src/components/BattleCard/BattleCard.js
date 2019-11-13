@@ -68,8 +68,6 @@ class BattleCard extends Component {
           </div>
           <img className="BattleCard__avatar" alt="Pokémon" src={image} />
           <div className="BattleCard__atks">
-
-            <div className="BattleCard__atks-panel" onClick={() => { this.props.doDamage( damageAtk1, id === '0' ? 'pokemon2' : 'pokemon1');} } >
             <div 
               className="BattleCard__atks-panel" 
               onClick={(e) =>
@@ -84,13 +82,11 @@ class BattleCard extends Component {
                 {damageAtk1}
               </span>
             </div>
-            <div className="BattleCard__atks-panel" onClick={() => { this.props.doDamage( damageAtk2, id === '0' ? 'pokemon2' : 'pokemon1');} } >
-            <div 
-              className="BattleCard__atks-panel" 
-              onClick={(e) =>
-                {
-                  this.props.doDamage(damageAtk1,id === "0" ?"pokemon2":"pokemon1")
-                }}
+            <div
+              className="BattleCard__atks-panel"
+              onClick={(e) => {
+                this.props.doDamage(damageAtk1, id === '0' ? 'pokemon2' : 'pokemon1');
+              }}
             >
               <span className="BattleCard__atks-panel-name">
                 {atk2}
@@ -100,8 +96,6 @@ class BattleCard extends Component {
               </span>
             </div>
           </div>
-        </div>
-        </div>
         </div>
       </section>
     );
