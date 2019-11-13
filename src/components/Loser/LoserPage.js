@@ -15,7 +15,6 @@ import {
 
 function LoserPage(){
         return(
-            <Router>
                 <div className="loser-block--page">
                     <div className="loser-structure--page">
                     <div className="element-animation2">
@@ -23,8 +22,7 @@ function LoserPage(){
                     </div>
                     <div className="element-animation">
                         <h2 className="loser--title">You loose</h2>
-                    </div>
-                           
+                    </div>     
                     <div className="bounce-in-bottom ">
                         <Link path to="/">     
                             <img className="row" src={Row} alt="lose"/>
@@ -34,11 +32,6 @@ function LoserPage(){
                         </div>
                         
                 </div>
-
-                <Switch>
-                    <Route exact path="/" component={Loading} />
-                </Switch>
-            </Router>
     )
 }
 
