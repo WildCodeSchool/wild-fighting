@@ -20,6 +20,8 @@
 h5.card-header {
     margin-left: 14px;
     margin-top: 10px;
+    border-bottom: 1px solid yellowgreen;
+    width: 73%;
   }
   
   .card-body {
