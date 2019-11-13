@@ -1,0 +1,108 @@
+.DisplayCombatCard {
+    text-align: center;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%), linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%), linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.combat-card {
+    border-radius: 10px;
+    padding: 10px;
+    width: 25%;
+    margin: auto;
+}
+
+.combat-card--content {
+    background-color: rgba(42, 117, 187,0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.combat-card--info {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.combat-card--info div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.combat-card--info-pv,
+.combat-card--info-name {
+    font-size: 1.5em;
+    margin-right: 10px;
+    font-weight: 600;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+}
+
+.combat-card--avatar {
+    width: 70%;
+    max-width: 70%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 15px;
+    animation: animationPokemon linear 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:forwards;
+    transform: scale(2);
+}
+
+.combat-card--desc {
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: 'Roboto';
+    padding: 25px;
+}
+
+.combat-card--atks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.combat-card--atks-panel {
+    padding: 15px;
+    border: solid 2px #ffcb05;
+    background-color: #3c5aa6;
+    width: 80%;
+    font-size: 1.1em;
+    font-family: 'Roboto';
+    font-weight: 600;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.combat-card--atks-panel-name{
+    display:flex;
+    align-items: center;
+}
+  
+@keyframes animationPokemon{
+    0% {
+      transform:  translate(0px,0px) scale(1.5) ;
+    }
+    30% {
+      transform:  translate(5px,-5px) scale(1.5) ;
+    }
+    60% {
+      transform:  translate(5px,0px) scale(1.5) ;
+    }
+    80% {
+      transform:  translate(0px,5px) scale(1.5) ;
+    }
+    100% {
+      transform:  translate(0px,0px) scale(1.5) ;
+    }
+  }
+  .type--image{
+      margin-left: 5px;
+  }
+  
