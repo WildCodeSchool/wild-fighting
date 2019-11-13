@@ -1,4 +1,7 @@
-.SelectCard {
+button > * {
+    pointer-events: none;
+  }
+.BattleCard {
     border-radius: 10px;
     background-color: #ffcb05;
     padding: 10px;
@@ -6,26 +9,26 @@
     margin: auto;
 }
 
-.SelectCard__content {
+.BattleCard__content {
     background-color: #2a75bb;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.SelectCard__info {
+.BattleCard__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
 
-.SelectCard__info div {
+.BattleCard__info div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.SelectCard__info-pv,
-.SelectCard__info-name {
+.BattleCard__info-pv,
+.BattleCard__info-name {
     font-size: 1.5em;
     margin: 0;
     margin-right: 10px;
@@ -34,7 +37,7 @@
     text-transform: capitalize;
 }
 
-.SelectCard__avatar {
+.BattleCard__avatar {
     width: 70%;
     max-width: 70%;
     transform: scale(1.5);
@@ -44,12 +47,12 @@
     margin-bottom: 15px;
 }
 
-.SelectCard__desc {
+.BattleCard__desc {
     margin:auto;
     margin-bottom: 15px;
 }
 
-.SelectCard__desc {
+.BattleCard__desc {
     text-align: left;
     font-size: 1.1em;
     font-weight: 400;
@@ -57,13 +60,13 @@
     padding: 25px;
 }
 
-.SelectCard__atks {
+.BattleCard__atks {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.SelectCard__atks-panel {
+.BattleCard__atks-panel {
     padding: 15px;
     border: solid 2px #ffcb05;
     background-color: #3c5aa6;
@@ -77,12 +80,12 @@
     justify-content: space-between;
     align-items: center;
 }
-.SelectCard__atks-panel-name{
+.BattleCard__atks-panel-name{
     display:flex;
     align-items: center;
     text-transform: capitalize;
 }
-.SelectCard__atks-panel-name img{
+.BattleCard__atks-panel-name img{
     margin-right: 10px;
 }
 .type--image{

@@ -2,23 +2,3 @@
   color: #09d3ac;
 }
 
-.App--VS{
-  height: 150px;
-  width: 150px;
-  background-color: rgba(60, 90, 166,0.5);
-  margin:auto;
-  border-radius:50%;
-  display:flex;
-}
-.App--VS-button{
-  font-size: 32px;
-  width: 100%;
-  height: 100%;
-  border-radius:50%;
-  font-weight: 600;
-  font-family: 'Roboto';
-  color:#ffcb05;
-  background-color: transparent;
-  border:none;
-  margin:auto;
-}
