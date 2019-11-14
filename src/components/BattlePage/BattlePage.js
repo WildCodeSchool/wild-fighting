@@ -11,6 +11,7 @@ class BattlePage extends Component {
     this.state = {
       pokemon1 : null,
       pokemon2 : null,
+      round:props.round
     }
   }
   componentDidMount(){
@@ -22,20 +23,22 @@ class BattlePage extends Component {
       .then( response => response.data )
       .then( pokemon => {
         this.setState({['pokemon'+index]:pokemon})
-        this.setState({["pokemon"+index+"hp"]:pokemon.stats[5].base_stat})
+        this.setState({["pokemon"+index+"hp"]:10 * Math.floor(pokemon.stats[5].base_stat / 10)})
       })
   }
   doDamage = (damage, counter) => {
+    console.log()
     this.setState(
-      (prev,props) => (
+      (prev) => (
         {
           [counter+"hp"] : prev[counter+"hp"] - damage,
         }
       )
     )
+    this.state.round === 0 ? this.setState({round:1}) : this.setState({round:0})
   }
   render(){
-    const {pokemon1,pokemon2,pokemon1hp,pokemon2hp} = this.state;
+    const {pokemon1,pokemon2,pokemon1hp,pokemon2hp,round} = this.state;
     const {pokemon1Atks,pokemon2Atks} = this.props
     return (
       <div>
@@ -44,6 +47,7 @@ class BattlePage extends Component {
           (
             <div className="BattlePage">
               <BattleCard
+                key="pokemon1"
                 id="0"
                 moves={pokemon1.moves}
                 atk1={pokemon1Atks.atk1.name}
@@ -55,8 +59,10 @@ class BattlePage extends Component {
                 type={pokemon1.types.map(x=>x.type.name)}
                 hp={pokemon1hp}
                 doDamage={this.doDamage}
+                round={round}
               />
               <BattleCard
+                key="pokemon2"
                 id="1"
                 moves={pokemon2.moves}
                 atk1={pokemon2Atks.atk1.name}
@@ -68,6 +74,7 @@ class BattlePage extends Component {
                 type={pokemon2.types.map(x=>x.type.name)}
                 hp={pokemon2hp}
                 doDamage={this.doDamage}
+                round={round}
               />
             </div>
           ):

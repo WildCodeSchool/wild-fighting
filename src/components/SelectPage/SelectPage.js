@@ -24,7 +24,7 @@ class SelectPage extends Component {
   }
   componentDidMount(){
     this.getPokemon(1, this.props.pokemonIndex1);
-    this.getPokemon(2, Math.floor(Math.random() * (100)) + 1);
+    this.getPokemon(2, Math.floor(Math.random() * (104)) + 1);
   }
   damage(id,name){
     const {stats} = this.state[name]

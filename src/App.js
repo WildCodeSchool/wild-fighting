@@ -77,7 +77,9 @@ class App extends Component {
                         pokemonIndex2={pokemonIndex2} 
                         pokemon1Atks={pokemon1.atks} 
                         pokemon2Atks={pokemon2.atks} 
-                        doDamage={this.doDamage}/>
+                        doDamage={this.doDamage}
+                        round={1}
+                        />
                     : <Redirect to="/"/>
                   }
                 </Route>

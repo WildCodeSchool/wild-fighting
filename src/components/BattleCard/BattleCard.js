@@ -31,7 +31,18 @@ class BattleCard extends Component {
     };
   }
   componentDidMount(){
-     
+    setTimeout(
+      (
+        ()=>
+          {this.props.round === 0 & this.props.id === "1" &&
+            (
+              Math.floor(Math.random() * 2) === 0 ?
+                this.props.doDamage(this.props.damageAtk1,"pokemon1"):
+                this.props.doDamage(this.props.damageAtk2,"pokemon1")
+            )
+          }
+      ),3000
+    )
   }
   render() {
     const {
@@ -43,6 +54,7 @@ class BattleCard extends Component {
       atk2,
       damageAtk1,
       damageAtk2,
+      round
     } = this.props;
     const {
       type1,
@@ -50,14 +62,14 @@ class BattleCard extends Component {
     } = this.state;
     return (
       <section className="BattleCard element-animation">
-        {this.props.hp <= 0 && this.props.id === "0" && <Redirect to="/loose"/>}
-        {this.props.hp <= 0 && this.props.id === "1" && <Redirect to="/win"/>}
+        { this.props.hp <= 0 && this.props.id === "0" && <Redirect to="/loose" /> }
+        { this.props.hp <= 0 && this.props.id === "1" && <Redirect to="/win" /> }
         <div className="BattleCard__content">
           <div className="BattleCard__info">
             <span className="BattleCard__info-name">{ name }</span>
             <div>
               <p className="BattleCard__info-pv">
-                {10 * Math.floor(hp / 10) < 0 ? 0 : 10 * Math.floor(hp / 10) }
+                {hp < 0 ? 0 : hp }
                 HP
               </p>
               <div>
@@ -68,8 +80,9 @@ class BattleCard extends Component {
           </div>
           <img className="BattleCard__avatar" alt="Pokémon" src={image} />
           <div className="BattleCard__atks">
-            <div 
-              className="BattleCard__atks-panel" 
+            <button 
+              className="BattleCard__atks-panel"
+              disabled={round !== parseInt(id) ? false : true}
               onClick={(e) =>
                 {
                   this.props.doDamage(damageAtk1,id === "0" ?"pokemon2":"pokemon1")
@@ -81,15 +94,21 @@ class BattleCard extends Component {
               <span className="BattleCard__atks__panel-damg">
                 {damageAtk1}
               </span>
-            </div>
-            <div className="BattleCard__atks-panel" onClick={() => { this.props.doDamage( damageAtk2, id === '0' ? 'pokemon2' : 'pokemon1');} } >
-              <span className="BattleCard__atks-panel-name">
+            </button>
+            <button 
+              className="BattleCard__atks-panel"
+              disabled={round !== parseInt(id) ? false : true}
+              onClick={(e) =>
+                {
+                  this.props.doDamage(damageAtk2,id === "0" ?"pokemon2":"pokemon1")
+                }}
+            >              <span className="BattleCard__atks-panel-name">
                 {atk2}
               </span>
               <span className="BattleCard__atks__panel-damg">
                 {damageAtk2}
               </span>
-            </div>
+            </button>
           </div>
         </div>
       </section>
