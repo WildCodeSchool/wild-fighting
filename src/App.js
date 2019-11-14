@@ -64,7 +64,11 @@ class App extends Component {
                   }
                 </Route>
                 <Route path="/load" component={Loading} />
+<<<<<<< HEAD
                 <Route path="/win" component={WinnerPage} />
+=======
+                
+>>>>>>> ab52ae899fdcaf3c15613c24d505d424d8c4dece
                 <Route path="/loose" component={LoserPage} />
                 <Route path="/pokedex" component={ModalPage} />
               </Switch>
