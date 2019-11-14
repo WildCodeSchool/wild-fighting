@@ -82,12 +82,7 @@ class BattleCard extends Component {
                 {damageAtk1}
               </span>
             </div>
-            <div
-              className="BattleCard__atks-panel"
-              onClick={(e) => {
-                this.props.doDamage(damageAtk1, id === '0' ? 'pokemon2' : 'pokemon1');
-              }}
-            >
+            <div className="BattleCard__atks-panel" onClick={() => { this.props.doDamage( damageAtk2, id === '0' ? 'pokemon2' : 'pokemon1');} } >
               <span className="BattleCard__atks-panel-name">
                 {atk2}
               </span>
