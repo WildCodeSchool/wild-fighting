@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import spinner from './spinner.gif';
 import './PokemonCard.css';
 
@@ -71,7 +71,7 @@ class PokemonCard extends Component {
               src={`https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonIndex}.png?raw=true`}
               onLoad={() => this.setState({ imageLoading: false })}
               onError={() => this.setState({ tooManyRequests: true })}
-              className={classNames('card-img-top rounded mx-auto mt-2', {
+              className={classnames('card-img-top rounded mx-auto mt-2', {
                 'sprite-too-many-requests': tooManyRequests,
                 'sprite-image-ready': !imageLoading,
               })}
