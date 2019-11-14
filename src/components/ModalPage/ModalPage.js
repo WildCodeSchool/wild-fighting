@@ -29,7 +29,7 @@ class ModalPage extends Component {
         <img className="pokelogo" src={Pict} alt="logo pokemon" />
         </div>
         <div className = "Modal">
-          <button className="butt" onClick={this.onOpenModal}>Open modal</button>
+          <button className="butt" onClick={this.onOpenModal}>Choose Pokemon</button>
           <Modal open={open} onClose={this.onCloseModal} center>
           <PokeList modalState={this.props.modalState} />
           </Modal>
