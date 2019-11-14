@@ -5,7 +5,7 @@ import './LoserPage.css';
 import Row from './return.png';
 import PokeFinal from './pokefinal.png';
 
-function LoserPage({pokemonIndex}) {
+function LoserPage({pokemonIndex,modalState}) {
   return (
     <div className="loser-block--page">
       {

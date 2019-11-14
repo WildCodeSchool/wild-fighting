@@ -5,7 +5,7 @@ import axios from 'axios';
 import trophy from './trophy2.0.png';
 import returnArrow from './return.png';
 
-const Winner = ({pokemonIndex}) => {
+const Winner = ({pokemonIndex, modalState}) => {
   const [imagePokemon, changeImagePokemon] = useState()
   useEffect(()=>{
       axios.get("https://pokeapi.co/api/v2/pokemon/"+ pokemonIndex)
@@ -31,7 +31,9 @@ const Winner = ({pokemonIndex}) => {
         </div>
         <div className="option">
           <div className="bounce-in-bottom">
-            <Link to="/"><img className="arrow-w" src={returnArrow} alt="returnarrow" /></Link>
+            <Link to="/">
+              <img className="arrow-w" src={returnArrow} alt="returnarrow" />
+            </Link>
           </div>
         </div>
       </div>
