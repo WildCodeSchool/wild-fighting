@@ -18,4 +18,9 @@ body {
   src:local('PokemonSolid'),
   url('./fonts/Pokemon_Solid.ttf') format('truetype');
  }
- 
+
+img {
+  display: unset !important;
+  box-sizing: border-box;
+}
+

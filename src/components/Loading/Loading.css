@@ -76,7 +76,8 @@
 .logo {
   display:flex;
   justify-content: center;
-  margin-left: 56vh;
+  margin-left: 54vh;
+  margin-top: -38vh;
   position: absolute;
 
 }
@@ -87,17 +88,16 @@
   display: flex;
   position: absolute;
   justify-items: center;
-  width: 40%;
-  height: auto;
-
+  margin-top: 12vh;
+  margin-left: 48vh;
 }
 
 .heartbeat {
   animation: heartbeat 1.5s ease-in-out infinite both;
   z-index: 10;
-  margin-left: 87vh;
+  margin-left: 44vh;
   width: 107vh;
-  margin-top: 43vh;
+  margin-top: 13vh;
  }
 
 .heartbeat >img {
@@ -126,7 +126,7 @@
 
 @media (orientation: landscape) and (max-width : 768px){
   .logo {
-    margin-left: 34vh;
+    margin-left: 42vh;
     position: absolute;
     font-size: 2rem;
   }
