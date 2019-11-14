@@ -1,5 +1,6 @@
 .SelectPage {
     text-align: center;
+    position:relative;
     flex-wrap: wrap;
     background-color: blue;
     display:flex;
@@ -30,3 +31,10 @@
     border:none;
     margin:auto;
   }
+.fa-undo-alt{
+  position: absolute;
+  color:#ffcb05;
+  top: 20%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+}

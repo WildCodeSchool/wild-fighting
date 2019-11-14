@@ -57,7 +57,7 @@ class PokemonCard extends Component {
 
     return (
       <div className="dashboard">
-        <StyledLink to={`pokemon/${pokemonIndex}`}>
+        <StyledLink to="/" onClick={()=>this.props.modalState(pokemonIndex)}>
           <Card className="card">
             <h5 className="card-header">{pokemonIndex}</h5>
             {imageLoading && (

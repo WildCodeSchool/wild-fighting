@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from 'react-responsive-modal';
-import PokeList from './PokeList/PokeList';
+import PokeList from '../PokeList/PokeList';
+// import 'ModalPage.css'
  
 class ModalPage extends Component {
   state = {
@@ -21,7 +22,7 @@ class ModalPage extends Component {
       <div className = "Modal">
         <button onClick={this.onOpenModal}>Open modal</button>
         <Modal open={open} onClose={this.onCloseModal} center>
-         <PokeList />
+         <PokeList modalState={this.props.modalState} />
         </Modal>
       </div>
     );
