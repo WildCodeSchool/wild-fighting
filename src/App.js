@@ -9,7 +9,6 @@ import WinnerPage from './components/WinnerPage/WinnerPage';
 import SelectPage from './components/SelectPage/SelectPage';
 import ModalPage from './components/ModalPage/ModalPage';
 import Onglet from './components/Onglet/Onglet';
-import './components/ModalPage.css';
 
 class App extends Component {
     constructor(props){
