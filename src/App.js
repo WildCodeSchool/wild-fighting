@@ -14,11 +14,11 @@ import Onglet from './components/Onglet/Onglet';
 class App extends Component {
     constructor(props){
         super(props)
-        this.state= {
+        this.state = {
             pokemonIndex1:null,
             pokemonIndex2:null,
             pokemon1:null,
-            pokemon2:null,
+            pokemon2:null
         }
     }
     addPokemon = ( pkIndex ) => {
