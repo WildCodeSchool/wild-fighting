@@ -12,6 +12,7 @@
     "react-scripts": "3.2.0",
     "sanitize.css": "^11.0.0",
     "styled-components": "^4.4.1"
+
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,9 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb": "^18.0.1"
   }
 }

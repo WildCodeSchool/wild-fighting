@@ -50,18 +50,20 @@
    * ----------------------------------------
    */
   
+
 .container{
-  display: flex;
+
   background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
   linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
   linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
   min-width: 100vh;
-  height: 100vh;
-  justify-content: center;
+  height: 100%;
+  position:relative;
 }  
 
 .Loading__title {
   font-family : PokemonSolid;
+  text-align: center;
 }
 
 .title {
@@ -72,13 +74,18 @@
 }
 
 .logo {
+  display:flex;
   justify-content: center;
   margin-left: 54vh;
   margin-top: -38vh;
   position: absolute;
+
 }
-  
+
+
+
 .picture {
+  display: flex;
   position: absolute;
   justify-items: center;
   margin-top: 12vh;
