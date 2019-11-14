@@ -31,6 +31,9 @@
     border-radius: 10px;
     border: 1px solid;
     box-shadow: inset 1px 1px 24px black, 1px 1px 3px white;
+    font-family: PokemonSolid;
+    color: #41609f;
+    text-shadow: 1px 1px 3px yellow;
   }
 
   .butt:hover {
@@ -113,4 +116,12 @@
 
 .tracking-in-contract-bck-top {
 	animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.words {
+    font-family: PokemonSolid;
+    color: #ffc72c;
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px black, 3px 0px 9px blue;
+    margin-left: -8%;
 }

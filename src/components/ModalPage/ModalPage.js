@@ -27,6 +27,7 @@ class ModalPage extends Component {
         </div>
         <div className="tracking-in-contract-bck-top">
         <img className="pokelogo" src={Pict} alt="logo pokemon" />
+        <h2 className="words">Wild Fighting</h2>
         </div>
         <div className = "Modal">
           <button className="butt" onClick={this.onOpenModal}>Choose Pokemon</button>
