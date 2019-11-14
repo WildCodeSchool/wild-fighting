@@ -50,7 +50,6 @@ class BattleCard extends Component {
     } = this.state;
     return (
       <section className="BattleCard element-animation">
-        {console.log(this.props.hp)}
         {this.props.hp <= 0 && this.props.id === "0" && <Redirect to="/loose"/>}
         {this.props.hp <= 0 && this.props.id === "1" && <Redirect to="/win"/>}
         <div className="BattleCard__content">
@@ -77,12 +76,7 @@ class BattleCard extends Component {
                 {damageAtk1}
               </span>
             </div>
-            <div
-              className="BattleCard__atks-panel"
-              onClick={(e) => {
-                this.props.doDamage(damageAtk1, id === '0' ? 'pokemon2' : 'pokemon1');
-              }}
-            >
+            <div className="BattleCard__atks-panel" onClick={() => { this.props.doDamage( damageAtk2, id === '0' ? 'pokemon2' : 'pokemon1');} } >
               <span className="BattleCard__atks-panel-name">
                 {atk2}
               </span>
