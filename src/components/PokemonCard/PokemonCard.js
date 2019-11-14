@@ -28,7 +28,6 @@ const Card = styled.div`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: black;
-
   &:focus,
   &:hover,
   &:visited,
@@ -78,7 +77,7 @@ class PokemonCard extends Component {
             />
             {tooManyRequests && (
               <h6 className="mx-auto">
-                <span className="badge badge-danger mt-2">
+                <span className="badge">
                   Too Many Requests
                 </span>
               </h6>
