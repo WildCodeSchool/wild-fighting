@@ -41,7 +41,7 @@ class BattleCard extends Component {
                 this.props.doDamage(this.props.damageAtk2,"pokemon1")
             )
           }
-      ),3000
+      ),3500
     )
   }
   render() {
@@ -85,7 +85,7 @@ class BattleCard extends Component {
               disabled={round !== parseInt(id) ? false : true}
               onClick={(e) =>
                 {
-                  this.props.doDamage(damageAtk1,id === "0" ?"pokemon2":"pokemon1")
+                  this.props.doDamage(damageAtk1,id === "0" ? "pokemon2" : "pokemon1")
                 }}
             >
               <span className="BattleCard__atks-panel-name">
@@ -100,9 +100,10 @@ class BattleCard extends Component {
               disabled={round !== parseInt(id) ? false : true}
               onClick={(e) =>
                 {
-                  this.props.doDamage(damageAtk2,id === "0" ?"pokemon2":"pokemon1")
+                  this.props.doDamage(damageAtk2,id === "0" ? "pokemon2" : "pokemon1")
                 }}
-            >              <span className="BattleCard__atks-panel-name">
+            >              
+              <span className="BattleCard__atks-panel-name">
                 {atk2}
               </span>
               <span className="BattleCard__atks__panel-damg">
