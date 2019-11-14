@@ -10,9 +10,8 @@ import Onglet from './components/Onglet/Onglet';
 class App extends Component {
   render(){
   return (
-    <>
-    <Onglet />
     <Router>
+    <Onglet />
       <div>
         <Switch>
           {/* <Route exact path="/" component={DisplayCardSelect} />*/}
@@ -23,7 +22,6 @@ class App extends Component {
         </Switch>
       </div>
     </Router>
-    </>
   )
   }
 }

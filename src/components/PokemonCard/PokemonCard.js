@@ -71,7 +71,7 @@ class PokemonCard extends Component {
               src={`https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonIndex}.png?raw=true`}
               onLoad={() => this.setState({ imageLoading: false })}
               onError={() => this.setState({ tooManyRequests: true })}
-              className={classNames('card-img-top rounded mx-auto mt-2', {
+              className={classNames('card-img-top ', {
                 'sprite-too-many-requests': tooManyRequests,
                 'sprite-image-ready': !imageLoading,
               })}
