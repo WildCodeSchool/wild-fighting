@@ -5,7 +5,7 @@ button > * {
     border-radius: 10px;
     background-color: #ffcb05;
     padding: 10px;
-    width: 25%;
+    width: 25% !important;
     margin: auto;
 }
 
@@ -96,9 +96,6 @@ button > * {
     animation-iteration-count: infinite;
     transform-origin: 50% 50%;
     animation-fill-mode: forwards;
-}
-.dNONE{
-    display: none;
 }
 @keyframes animationVS {
     0% {

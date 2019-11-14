@@ -45,7 +45,7 @@ class SelectCard extends Component {
       type2,
     } = this.state;
     return (
-      <section className="SelectCard element-animation">
+      <section className="SelectCard element-animation1">
         <div className="SelectCard__content">
           <div className="SelectCard__info">
             <span className="SelectCard__info-name">{ name }</span>

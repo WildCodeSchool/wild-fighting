@@ -39,6 +39,12 @@ class App extends Component {
       )
     }
   render () {
+    const {
+      pokemon1,
+      pokemon2,
+      pokemonIndex2,
+      pokemonIndex1,
+    } = this.state
       return (
         <Router>
           <div className="App">
@@ -46,24 +52,25 @@ class App extends Component {
               <Switch>
                 <Route exact path="/">
                   <SelectPage 
-                    pokemonIndex1={this.state.pokemonIndex1} 
-                    pokemonIndex2={this.state.pokemonIndex2} 
+                    pokemonIndex1={pokemonIndex1} 
+                    pokemonIndex2={pokemonIndex2} 
                     pokemonStats={this.pokemonStats}/>
                 </Route>
                 <Route path="/battle">
                 {
-                  this.state.pokemon1 && this.state.pokemon2
+                  pokemon1 && pokemon2
                     ? <BattlePage 
-                        pokemonIndex1={this.state.pokemonIndex1} 
-                        pokemonIndex2={this.state.pokemonIndex2} 
-                        pokemon1Atks={this.state.pokemon1.atks} 
-                        pokemon2Atks={this.state.pokemon2.atks} 
+                        pokemonIndex1={pokemonIndex1} 
+                        pokemonIndex2={pokemonIndex2} 
+                        pokemon1Atks={pokemon1.atks} 
+                        pokemon2Atks={pokemon2.atks} 
                         doDamage={this.doDamage}/>
                     : <Redirect to="/"/>
                   }
                 </Route>
-                <Route path="/load" component={Loading} />
-                <Route path="/win" component={WinnerPage} />
+                <Route path="/win">
+                  <WinnerPage pokemonIndex={pokemonIndex1}/>
+                </Route>
                 <Route path="/loose" component={LoserPage} />
                 <Route path="/pokedex" component={ModalPage} />
               </Switch>

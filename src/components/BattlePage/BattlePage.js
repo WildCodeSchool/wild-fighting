@@ -2,7 +2,6 @@
 /* eslint-disable linebreak-style */
 import React, { Component } from 'react';
 import BattleCard from '../BattleCard/BattleCard';
-import Loading from '../Loading/Loading';
 import './BattlePage.css';
 import axios from 'axios';
 
@@ -27,17 +26,13 @@ class BattlePage extends Component {
       })
   }
   doDamage = (damage, counter) => {
-    // this.setState(x=>({[counter] : x.stats[5].base_stat - damage}))
     this.setState(
       (prev,props) => (
         {
           [counter+"hp"] : prev[counter+"hp"] - damage,
-            // console.log(prev[counter+"hp"])
         }
       )
     )
-    console.log(this.state[counter+"hp"])
-    console.log(counter)
   }
   render(){
     const {pokemon1,pokemon2,pokemon1hp,pokemon2hp} = this.state;
@@ -76,7 +71,7 @@ class BattlePage extends Component {
               />
             </div>
           ):
-          <Loading />
+          <p>Loading ...</p>
         }
         </div>
     );

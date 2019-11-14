@@ -2,7 +2,6 @@
 import React,{Component} from 'react';
 import { Link } from 'react-router-dom';
 import CardSelect from '../SelectCard/SelectCard';
-import Loading from '../Loading/Loading'
 import './SelectPage.css'
 import axios from 'axios'
 
@@ -101,7 +100,7 @@ class SelectPage extends Component {
               />
             </div>
           ):
-          <Loading />
+          <p>Loading ...</p>
         }
         </div>
     );

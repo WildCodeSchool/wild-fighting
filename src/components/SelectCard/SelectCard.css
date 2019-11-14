@@ -90,14 +90,11 @@
     width: 25px;
     margin: 2.5px;
 }
-.element-animation {
+.element-animation1 {
     animation: animationVS linear 3s;
     animation-iteration-count: infinite;
     transform-origin: 50% 50%;
     animation-fill-mode: forwards;
-}
-.dNONE{
-    display: none;
 }
 @keyframes animationVS {
     0% {
