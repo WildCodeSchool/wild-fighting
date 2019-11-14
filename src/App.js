@@ -11,7 +11,7 @@ class App extends Component {
   render() {
   return (
     <Router>
-    <Onglet />
+      <Onglet />
     <div>
       <Switch>
         {/* <Route exact path="/" component={DisplayCardSelect} />*/}
