@@ -71,7 +71,9 @@ class App extends Component {
                 <Route path="/win">
                   <WinnerPage pokemonIndex={pokemonIndex1}/>
                 </Route>
-                <Route path="/loose" component={LoserPage} />
+                <Route path="/loose">
+                  <LoserPage  pokemonIndex={pokemonIndex1} />
+                </Route>
                 <Route path="/pokedex" component={ModalPage} />
               </Switch>
           </div>

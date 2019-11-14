@@ -1,13 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import cross from './croixtest.png';
 import './LoserPage.css';
 import Row from './return.png';
 import PokeFinal from './pokefinal.png';
 
-function LoserPage() {
+function LoserPage({pokemonIndex}) {
   return (
     <div className="loser-block--page">
+      {
+        !pokemonIndex && <Redirect to="/" />
+      }
       <div className="loser-structure--page">
         <div className="element-animation2">
           <img className="cross" src={cross} alt="lose"/>
