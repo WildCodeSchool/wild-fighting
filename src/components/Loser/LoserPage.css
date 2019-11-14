@@ -9,6 +9,15 @@
   animation-iteration-count: 1;
   transform-origin: 50% 50%;
   z-index: 10;
+
+}
+.element-animation {
+  color: #FFCB05;
+  text-shadow: 1px 2px 4px #FF0000, 2px 3px 5px #003A70, 5px 2px 6px #3B4CCA; 
+  width: 100%;
+  text-align: center;
+  overflow:hidden;
+  position: relative;
 }
 
 @keyframes animationFrames {
@@ -49,13 +58,16 @@
 }
 
 .row {
-  transition-delay: 2s;
   width: 8%;
-  height: auto;
+  position: absolute;
+
+
 }
 
 .bounce-in-bottom {
   animation: bounce-in-bottom 1.1s 2s both;
+  z-index: 15;
+  margin-right: 15vh;
 }
 
 @keyframes bounce-in-bottom {
@@ -102,9 +114,11 @@
   }
 }
 
-.container {
-  width: auto;
+
+
+.loser-block--page {
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,15 +126,16 @@
   background-color: RGBA(255, 0, 0, .8);
   font-size: 50px;
   margin-bottom: 0;
-  overflow: hidden;
-  position: relative;
+  position: absolute;
 }
 
-.loser-poke {
-  height: 100vh;
-  position: absolute;
-  margin-top: 44vh;
-  z-index: 8;
+.pokeball--fond{
+  position:fixed;
+  left:0;
+  bottom:0;
+  margin:0;
+  padding:0;
+  width:35%;
 
 }
 
@@ -155,16 +170,73 @@
 }
 
 @media (orientation: landscape) and (max-width : 768px) {
-  .loser-poke {
-    height: 70vh;
+  .loser-block--page{
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .loser--title {
+    margin: 0;
+    margin-bottom: 0px;
+    font-size:25px ;
   }
 
   .bounce-in-bottom {
     z-index: 9;
-    margin-bottom: 3vh;
+    margin-bottom: 0;
   }
 
   .element-animation {
-    margin-bottom: -41px;
+    margin-bottom: 0;
+  }
+
+  .pokeball--fond{
+    display:none;
+  }
+  
+  .row {
+    width:5%;
+    position: absolute;
+    
+    
+  }
+  
+  .cross {
+    width: 8%;
+    margin-top: -3%;
+  }
+}
+
+@media (orientation: landscape) and (max-width : 1167px) {
+
+  .loser-structure--page{
+    margin-bottom: 5%;
+  }
+  
+  .loser--title {
+    margin: 0;
+    margin-bottom: 0px;
+    font-size:55px ;
+  }
+
+
+  .element-animation {
+    margin-bottom: 0;
+
+  }
+
+  .pokeball--fond{
+    display:none;
+  }
+
+  .row {
+    width:10%;
+
+    
+  }
+  
+  .cross {
+    width: 16%;
+    margin-bottom: 5%;
   }
 }
