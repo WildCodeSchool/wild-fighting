@@ -9,7 +9,7 @@ class PokemonList extends Component {
   };
 
   async componentDidMount() {
-    const res = await axios.get('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=56');
+    const res = await axios.get('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=104');
     this.setState({ pokemons: res.data['results'] });
     console.log(res.data['results'] )
   }
