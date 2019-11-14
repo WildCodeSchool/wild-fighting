@@ -5,7 +5,6 @@ import './SelectCard.css';
 class SelectCard extends Component {
   constructor(props) {
     super(props);
-    const { move } = this.props;
     const [type1, type2] = props.type.map((x) => {
       switch (x) {
         case 'ground':

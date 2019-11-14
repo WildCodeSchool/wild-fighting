@@ -7,7 +7,6 @@ import BattlePage from './components/BattlePage/BattlePage';
 import LoserPage from './components/Loser/LoserPage';
 import WinnerPage from './components/WinnerPage/WinnerPage';
 import SelectPage from './components/SelectPage/SelectPage';
-import Loading from './components/Loading/Loading';
 import ModalPage from './components/ModalPage';
 import Onglet from './components/Onglet/Onglet';
 
