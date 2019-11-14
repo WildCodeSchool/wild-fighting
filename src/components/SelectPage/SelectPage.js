@@ -23,7 +23,7 @@ class SelectPage extends Component {
     }
   }
   componentDidMount(){
-    this.getPokemon(1, Math.floor(Math.random() * (100)) + 1);
+    this.getPokemon(1, this.props.pokemonIndex1);
     this.getPokemon(2, Math.floor(Math.random() * (100)) + 1);
   }
   damage(id,name){
@@ -84,6 +84,7 @@ class SelectPage extends Component {
                 type={pokemon1.types.map(x=>x.type.name)} 
                 hp={pokemon1.stats[5].base_stat} 
               />
+              <i className="fas fa-undo-alt" onClick={()=>this.props.modalState(null)}></i>
               <Link to='/battle' className="SelectPage__VS"><button className="SelectPage__VS-button">V S</button></Link>
               <CardSelect 
                 id="1" 

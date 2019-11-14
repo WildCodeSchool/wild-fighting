@@ -7,7 +7,7 @@ import BattlePage from './components/BattlePage/BattlePage';
 import LoserPage from './components/Loser/LoserPage';
 import WinnerPage from './components/WinnerPage/WinnerPage';
 import SelectPage from './components/SelectPage/SelectPage';
-import ModalPage from './components/ModalPage';
+import ModalPage from './components/ModalPage/ModalPage';
 import Onglet from './components/Onglet/Onglet';
 
 class App extends Component {
@@ -17,8 +17,14 @@ class App extends Component {
             pokemonIndex1:null,
             pokemonIndex2:null,
             pokemon1:null,
-            pokemon2:null
+            pokemon2:null,
+            modalChoose:false
         }
+    }
+    modalState = (id) => {
+      this.setState({modalChoose: !this.state.modalChoose})
+      this.setState({pokemonIndex1: id})
+      console.log(this.state.modalChoose)
     }
     addPokemon = ( pkIndex ) => {
         this.setState({pokemonIndex:pkIndex})
@@ -43,6 +49,7 @@ class App extends Component {
       pokemon2,
       pokemonIndex2,
       pokemonIndex1,
+      modalChoose
     } = this.state
       return (
         <Router>
@@ -50,10 +57,17 @@ class App extends Component {
               <Onglet />
               <Switch>
                 <Route exact path="/">
-                  <SelectPage 
-                    pokemonIndex1={pokemonIndex1} 
-                    pokemonIndex2={pokemonIndex2} 
-                    pokemonStats={this.pokemonStats}/>
+                  {
+                    modalChoose ? 
+                    <SelectPage 
+                      pokemonIndex1={pokemonIndex1} 
+                      pokemonIndex2={pokemonIndex2} 
+                      pokemonStats={this.pokemonStats}
+                      modalState={this.modalState}
+                    /> 
+                    : <ModalPage modalState={this.modalState} />
+                  }
+                  
                 </Route>
                 <Route path="/battle">
                 {
@@ -68,10 +82,10 @@ class App extends Component {
                   }
                 </Route>
                 <Route path="/win">
-                  <WinnerPage pokemonIndex={pokemonIndex1}/>
+                  <WinnerPage pokemonIndex={pokemonIndex1} modalState={this.modalState}/>
                 </Route>
                 <Route path="/loose">
-                  <LoserPage  pokemonIndex={pokemonIndex1} />
+                  <LoserPage  pokemonIndex={pokemonIndex1}  modalState={this.modalState}/>
                 </Route>
                 <Route path="/pokedex" component={ModalPage} />
               </Switch>

@@ -24,6 +24,7 @@ class PokemonList extends Component {
                 key={pokemon.name}
                 name={pokemon.name}
                 url={pokemon.url}
+                modalState={this.props.modalState}
               />
             ))
           : <h5>Getting Pokemon...</h5>
