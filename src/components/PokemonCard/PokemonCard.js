@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import spinner from './spinner.gif';
 import './PokemonCard.css';
 
@@ -28,7 +28,6 @@ const Card = styled.div`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: black;
-
   &:focus,
   &:hover,
   &:visited,
@@ -57,7 +56,7 @@ class PokemonCard extends Component {
 
     return (
       <div className="dashboard">
-        <StyledLink to={`pokemon/${pokemonIndex}`}>
+        <StyledLink to="/" onClick={()=>this.props.modalState(pokemonIndex)}>
           <Card className="card">
             <h5 className="card-header">{pokemonIndex}</h5>
             {imageLoading && (
@@ -71,14 +70,14 @@ class PokemonCard extends Component {
               src={`https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonIndex}.png?raw=true`}
               onLoad={() => this.setState({ imageLoading: false })}
               onError={() => this.setState({ tooManyRequests: true })}
-              className={classNames('card-img-top rounded mx-auto mt-2', {
+              className={classnames('card-img-top', {
                 'sprite-too-many-requests': tooManyRequests,
                 'sprite-image-ready': !imageLoading,
               })}
             />
             {tooManyRequests && (
               <h6 className="mx-auto">
-                <span className="badge badge-danger mt-2">
+                <span className="badge">
                   Too Many Requests
                 </span>
               </h6>

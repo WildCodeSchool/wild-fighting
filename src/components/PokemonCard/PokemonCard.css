@@ -21,7 +21,7 @@ h6.card-title {
 }
 
 
-h5.card-header {
+.card-header {
     margin-left: 14px;
     margin-top: 10px;
     border-bottom: 1px solid yellowgreen;
@@ -32,6 +32,7 @@ h5.card-header {
   }
   
   .card-body {
+    position: relative;
     border-top: 1px solid yellowgreen;
     margin-top: -1vh;
     background-color: blue;

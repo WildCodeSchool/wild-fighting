@@ -9,7 +9,7 @@ class PokemonList extends Component {
   };
 
   async componentDidMount() {
-    const res = await axios.get('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=56');
+    const res = await axios.get('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=104');
     this.setState({ pokemons: res.data['results'] });
     console.log(res.data['results'] )
   }
@@ -24,6 +24,7 @@ class PokemonList extends Component {
                 key={pokemon.name}
                 name={pokemon.name}
                 url={pokemon.url}
+                modalState={this.props.modalState}
               />
             ))
           : <h5>Getting Pokemon...</h5>
